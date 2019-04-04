@@ -1,0 +1,59 @@
+2019-02-08 10:02:34,922 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2019-02-08 10:02:34,936 INFO o.a.j.JMeter: Loading user properties from: /home/yasas/Desktop/auto-migration-and-testing/testing/bin/user.properties
+2019-02-08 10:02:34,937 INFO o.a.j.JMeter: Loading system properties from: /home/yasas/Desktop/auto-migration-and-testing/testing/bin/system.properties
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: Copyright (c) 1998-2018 The Apache Software Foundation
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: Version 5.0 r1840935
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: java.version=1.8.0_191
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: os.name=Linux
+2019-02-08 10:02:34,941 INFO o.a.j.JMeter: os.arch=amd64
+2019-02-08 10:02:34,942 INFO o.a.j.JMeter: os.version=4.15.0-20-generic
+2019-02-08 10:02:34,942 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-02-08 10:02:34,942 INFO o.a.j.JMeter: Max memory     =1786249216
+2019-02-08 10:02:34,942 INFO o.a.j.JMeter: Available Processors =4
+2019-02-08 10:02:34,946 INFO o.a.j.JMeter: Default Locale=English (United States)
+2019-02-08 10:02:34,946 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2019-02-08 10:02:34,946 INFO o.a.j.JMeter: JMeterHome=/home/yasas/Desktop/auto-migration-and-testing/testing
+2019-02-08 10:02:34,946 INFO o.a.j.JMeter: user.dir  =/home/yasas/Desktop/auto-migration-and-testing/Python/pylibs
+2019-02-08 10:02:34,946 INFO o.a.j.JMeter: PWD       =/home/yasas/Desktop/auto-migration-and-testing/Python/pylibs
+2019-02-08 10:02:34,947 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: yasas-ThinkPad-X1-Carbon-3rd FullName: yasas-ThinkPad-X1-Carbon-3rd
+2019-02-08 10:02:34,949 INFO o.a.j.s.FileServer: Default base='/home/yasas/Desktop/auto-migration-and-testing/Python/pylibs'
+2019-02-08 10:02:34,954 INFO o.a.j.s.FileServer: Set new base='/home/yasas/Desktop/auto-migration-and-testing/Python/pylibs/../../testing/bin'
+2019-02-08 10:02:35,092 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-02-08 10:02:35,104 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-02-08 10:02:35,108 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-02-08 10:02:35,116 INFO o.a.j.s.SaveService: Loading file: ../../testing/bin/Scenario_003_APIM.jmx
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-02-08 10:02:35,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-02-08 10:02:35,287 INFO o.a.j.JMeter: Creating summariser <summary>
+2019-02-08 10:02:35,291 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-02-08 10:02:35,292 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-02-08 10:02:35,292 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-02-08 10:02:35,298 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-02-08 10:02:35,298 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-02-08 10:02:35,774 INFO o.a.j.JMeter: Running test (1549600355774)
+2019-02-08 10:02:35,819 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : API Publisher
+2019-02-08 10:02:35,819 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group API Publisher.
+2019-02-08 10:02:35,819 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-02-08 10:02:35,820 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 perThread=1000.0 delayedStart=false
+2019-02-08 10:02:35,843 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-02-08 10:02:35,843 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-02-08 10:02:35,847 INFO o.a.j.t.JMeterThread: Thread started: API Publisher 1-1
+2019-02-08 10:02:35,886 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = yasas-ThinkPad-X1-Carbon-3rd
+2019-02-08 10:02:35,894 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-02-08 10:02:35,896 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-02-08 10:02:35,896 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-02-08 10:02:35,896 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-02-08 10:02:35,896 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-02-08 10:02:36,005 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2019-02-08 10:02:36,010 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2019-02-08 10:02:36,011 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2019-02-08 10:02:36,095 INFO o.a.j.p.h.m.RegExUserParameters: RegExUserParameters element: RegEx User Parameters => Referenced RegExp was not found, no parameter will be changed
+2019-02-08 10:02:36,186 INFO o.a.j.t.JMeterThread: Thread is done: API Publisher 1-1
+2019-02-08 10:02:36,186 INFO o.a.j.t.JMeterThread: Thread finished: API Publisher 1-1
+2019-02-08 10:02:36,186 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-02-08 10:02:36,188 INFO o.a.j.r.Summariser: summary =     13 in 00:00:00 =   31.4/s Avg:     4 Min:     0 Max:    39 Err:    13 (100.00%)

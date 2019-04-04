@@ -1,0 +1,10 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="backEndService" context="/backend">
+    <resource methods="POST" url-mapping="/*" faultSequence="_token_fault_">
+        <inSequence>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+    </resource>
+</api>

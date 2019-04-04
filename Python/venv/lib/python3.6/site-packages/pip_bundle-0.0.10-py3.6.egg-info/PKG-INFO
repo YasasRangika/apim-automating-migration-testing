@@ -1,0 +1,96 @@
+Metadata-Version: 1.1
+Name: pip-bundle
+Version: 0.0.10
+Summary: Bundle all pip dependencies in a single tarball
+Home-page: https://github.com/develersrl/pip-bundle
+Author: Lorenzo Villani
+Author-email: lvillani@develer.com
+License: MIT
+Description: pip-bundle
+        ==========
+        
+        |PyPI Version| |PyPI Downloads| |MIT License|
+        
+        A quick and dirty script to bundle up all Python dependencies used by a
+        project. Best used with
+        `virtualenv <https://virtualenv.pypa.io/en/latest/>`__.
+        
+        **NOTE**: This script works only if all dependencies are available
+        through PyPI. If you have private dependencies you can follow
+        instructions provided by Armin Ronacher on his blog post `Python on
+        Wheels <http://lucumr.pocoo.org/2014/1/27/python-on-wheels/>`__.
+        
+        Installation
+        ============
+        
+        If you are on OS X and have Homebrew's Python:
+        
+        ::
+        
+            pip install pip-bundle
+        
+        Otherwise:
+        
+        ::
+        
+            pip install --user pip-bundle
+        
+        Then make sure to add the local pip's ``bin`` directory to the
+        ``$PATH``. Since it is different on each platform, please refer to its
+        documentation.
+        
+        Otherwise, if you're feeling a badass and want to ``sudo`` your way out,
+        then run:
+        
+        ::
+        
+            sudo pip install pip-bundle
+        
+        Usage
+        =====
+        
+        Make sure your current directory has the ``requirements.txt`` file, then
+        run the following command to create a file called ``bundle.pip-bundle``:
+        
+        ::
+        
+            pip-bundle create
+        
+        To install the bundle then run:
+        
+        ::
+        
+            pip-bundle install bundle.pip-bundle
+        
+        You can also change the name of the bundle by giving it on the command
+        line:
+        
+        ::
+        
+            pip-bundle create mybundle.pip-bundle # Create
+            pip-bundle install mybundle.pip-bundle    # Install
+        
+        And you can use an alternate name for the ``requirements.txt`` file:
+        
+        ::
+        
+            pip-bundle create -r my-own-requirements.txt
+        
+        **NOTE:** The bundle should be consumed on a similar platform to the one
+        that produced it.
+        
+        .. |PyPI Version| image:: https://img.shields.io/pypi/v/pip-bundle.svg
+           :target: https://pypi.python.org/pypi/pip-bundle
+        .. |PyPI Downloads| image:: https://img.shields.io/pypi/dm/pip-bundle.svg
+           :target: https://pypi.python.org/pypi/pip-bundle
+        .. |MIT License| image:: https://img.shields.io/badge/license-mit-blue.svg
+           :target: http://choosealicense.com/licenses/mit/
+        
+Keywords: pip bundle
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Build Tools
