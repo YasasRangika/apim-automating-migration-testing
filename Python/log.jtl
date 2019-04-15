@@ -709,3 +709,94 @@ timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success
 1554340462368,90,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=142a5a69-7a94-4069-9184-3234a333e3aa,90,0,0
 1554340462464,74,Generate the access token for scope test,200,OK,API Publisher 1-1,text,true,,452,385,1,1,https://localhost:8243/token,74,0,9
 1554340462540,361,Invoke the API,200,OK,API Publisher 1-1,text,true,,1342,705,1,1,https://localhost:8243/scope/1.0.0/order,361,0,0
+1554366217982,660,creator role creation,202,Accepted,Thread Group 1-1,text,true,,333,1384,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,660,0,264
+1554366218669,278,apicreator user creation,202,Accepted,Thread Group 1-1,text,true,,333,927,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,278,0,0
+1554366218950,115,publisher role creation,202,Accepted,Thread Group 1-1,text,true,,333,1001,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,115,0,0
+1554366219070,39,apipublisher user creation,202,Accepted,Thread Group 1-1,text,true,,333,935,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,39,0,0
+1554366219114,41,subscriber role creation,202,Accepted,Thread Group 1-1,text,true,,333,1004,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,41,0,0
+1554366219157,36,apisubscriber user creation,202,Accepted,Thread Group 1-1,text,true,,333,939,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,36,0,0
+1554366221780,1056,obtain the consumer key/secret key,200,OK,API Publisher 1-1,text,true,,500,422,1,1,https://localhost:9443/client-registration/v0.11/register,1054,0,321
+1554366222914,371,Generate the access token for Creator,200,OK,API Publisher 1-1,text,true,,535,461,1,1,https://localhost:8243/token,371,0,49
+1554366223296,13,obtain the consumer key/secret key,200,OK,API Publisher 1-1,text,true,,416,422,1,1,https://localhost:9443/client-registration/v0.11/register,12,0,0
+1554366223315,48,Generate the access token for Publisher,200,OK,API Publisher 1-1,text,true,,489,414,1,1,https://localhost:8243/token,48,0,0
+1554366223372,14,obtain the consumer key/secret key,200,OK,API Publisher 1-1,text,true,,416,422,1,1,https://localhost:9443/client-registration/v0.11/register,14,0,0
+1554366223396,41,Generate the access token for Admin,200,OK,API Publisher 1-1,text,true,,687,617,1,1,https://localhost:8243/token,41,0,0
+1554366223444,15,obtain the consumer key/secret key,200,OK,API Publisher 1-1,text,true,,416,422,1,1,https://localhost:9443/client-registration/v0.11/register,11,0,0
+1554366223463,36,Generate the access token as Subscriber,200,OK,API Publisher 1-1,text,true,,458,380,1,1,https://localhost:8243/token,36,0,0
+1554366223506,1985,Creator create a new API,201,Created,API Publisher 1-1,text,true,,3820,4191,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,1984,0,0
+1554366225505,2512,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=f3520577-73ea-4de3-bbaa-644366950a98&action=Publish,2512,0,25
+1554366228022,683,Create a new application,201,Created,API Publisher 1-1,text,true,,538,438,1,1,https://localhost:9443/api/am/store/v0.11/applications,681,0,21
+1554366228711,502,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=8dfffd78-e618-4c86-b6ef-6e40b63979a2,500,0,0
+1554366229223,91,Add a new subscription,201,Created,API Publisher 1-1,text,true,,465,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,90,0,0
+1554366229319,787,Invoke the API,201,Created,API Publisher 1-1,text,true,,607,446,1,1,https://localhost:8243/pizzashack/1.0.0/order,787,0,22
+1554366230113,712,Creator create a new API version,201,Created,API Publisher 1-1,text,true,,3852,326,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/copy-api?apiId=f3520577-73ea-4de3-bbaa-644366950a98&newVersion=2.0.0,712,0,17
+1554366230835,974,Publisher changing new API version status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=69468add-afd2-48f6-b7c0-6b28d9ed9e0a&action=Publish,974,0,0
+1554366231821,29,Create a new application for new version,201,Created,API Publisher 1-1,text,true,,538,438,1,1,https://localhost:9443/api/am/store/v0.11/applications,29,0,0
+1554366231857,260,Generate keys for application for new version,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=c51f2c20-5a0b-47fe-a542-ef487a831471,259,0,0
+1554366232122,79,Add a new subscription for new version,201,Created,API Publisher 1-1,text,true,,465,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,77,0,18
+1554366232211,91,Invoke the API new version,201,Created,API Publisher 1-1,text,true,,606,446,1,1,https://localhost:8243/pizzashack/2.0.0/order,90,0,10
+1554366232308,210,List of available APIs from Store,200,OK,API Publisher 1-1,text,true,,464,201,1,1,https://localhost:9443/api/am/store/v0.11/apis,200,0,0
+1554366232573,675,Creator create a new API with limited visibility,201,Created,API Publisher 1-1,text,true,,3847,4218,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,675,0,0
+1554366233262,823,Publish the API that has limited visibility ,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=ba0b9545-884c-44da-b9cb-f887e8e84ab0&action=Publish,823,0,0
+1554366239099,111,List of available APIs from Store by admin,200,OK,API Publisher 1-1,text,true,,1008,201,1,1,https://localhost:9443/api/am/store/v0.11/apis,110,0,10
+1554366244221,80,List of available APIs from Store by admin,200,OK,API Publisher 1-1,text,true,,1008,201,1,1,https://localhost:9443/api/am/store/v0.11/apis,79,0,7
+1554366244305,38,List of available APIs from Store by apipublisher,200,OK,API Publisher 1-1,text,true,,728,201,1,1,https://localhost:9443/api/am/store/v0.11/apis,38,0,0
+1554366244348,483,Creator create a new API with custom mediation(xml to json),201,Created,API Publisher 1-1,text,true,,2068,2448,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,483,0,0
+1554366244839,838,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=05bf180d-b20b-4bb1-96f9-392960fa668e&action=Publish,838,0,0
+1554366245681,31,Create a new application,201,Created,API Publisher 1-1,text,true,,538,438,1,1,https://localhost:9443/api/am/store/v0.11/applications,30,0,0
+1554366245716,247,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=61582f55-db38-4a45-8762-92978aa320d1,246,0,0
+1554366245967,57,Add a new subscription,201,Created,API Publisher 1-1,text,true,,459,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,57,0,0
+1554366246033,84,Invoke the API,200,OK,API Publisher 1-1,text,true,,583,221,1,1,https://localhost:8243/xmltest/1.0.0/xml,84,0,7
+1554366246121,602,Creator create a new API,201,Created,API Publisher 1-1,text,true,,4157,4528,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,602,0,0
+1554366246727,642,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=5092d44f-df4a-422c-bf61-aed8625d944f&action=Publish,642,0,10
+1554366247371,25,Create a new application,201,Created,API Publisher 1-1,text,true,,534,434,1,1,https://localhost:9443/api/am/store/v0.11/applications,25,0,0
+1554366247400,61,Add a new subscription,201,Created,API Publisher 1-1,text,true,,463,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,61,0,0
+1554366247464,219,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=a9ef9e99-91bb-41f9-b299-9e2caafa0f81,219,0,0
+1554366247687,37,Generate the access token for scope test,200,OK,API Publisher 1-1,text,true,,453,386,1,1,https://localhost:8243/token,37,0,0
+1554366247727,30,Invoke the API,201,Created,API Publisher 1-1,text,true,,607,451,1,1,https://localhost:8243/pizzashackscops/1.0.0/order,30,0,0
+1554366247761,489,Creator create a JWTTestAPI,201,Created,API Publisher 1-1,text,true,,2252,2622,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,489,0,0
+1554366248253,535,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=e54637e3-12e9-4ece-adce-9e64c47e4531&action=Publish,535,0,0
+1554366248791,36,Create a new application,201,Created,API Publisher 1-1,text,true,,535,435,1,1,https://localhost:9443/api/am/store/v0.11/applications,36,0,5
+1554366248830,197,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=d9229886-531b-49df-abb9-ab17b4c26e93,197,0,0
+1554366249030,84,Add a new subscription,201,Created,API Publisher 1-1,text,true,,462,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,84,0,0
+1554366249121,68,Validate Token,200,OK,API Publisher 1-1,text,false,"Test failed: variable(decodedJwtToken) expected to contain /""typ"":""JWT"",""alg"":""RS256"",""x5t"":""a_jhNus21KVuoFx65LmkW2O_l10""/",434,297,1,1,https://localhost:8243/jwtTesting/1.0.0/jwttest,68,0,10
+1554366249198,1863,Create Soap API,201,Created,API Publisher 1-1,text,true,,2414,2737,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,1863,0,0
+1554366251067,605,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=f933acca-7bef-4917-84c0-c44be8b8908b&action=Publish,605,0,5
+1554366251676,40,Create a new application,201,Created,API Publisher 1-1,text,true,,536,436,1,1,https://localhost:9443/api/am/store/v0.11/applications,40,0,0
+1554366251719,199,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=d592ad7a-d4d2-4330-ac89-b03439a697cc,199,0,0
+1554366251921,48,Add a new subscription,201,Created,API Publisher 1-1,text,true,,464,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,48,0,0
+1554366251974,516,Invoke the API,200,OK,API Publisher 1-1,text,true,,1342,712,1,1,https://localhost:8243/soapapicheck/1.0.0/order,516,0,5
+1554366252493,449,Creator create a new API version,201,Created,API Publisher 1-1,text,true,,2426,326,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/copy-api?apiId=f933acca-7bef-4917-84c0-c44be8b8908b&newVersion=2.0.0,449,0,0
+1554366252945,717,Publisher changing new API version status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=74b43b32-7df9-48d3-a791-18d9b77faa07&action=Publish,717,0,0
+1554366253665,45,Create a new application for new version,201,Created,API Publisher 1-1,text,true,,538,438,1,1,https://localhost:9443/api/am/store/v0.11/applications,44,0,15
+1554366253713,216,Generate keys for application for new version,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=c2a762b0-5f4c-44a0-9e12-cd67d7f7c23b,216,0,0
+1554366253932,55,Add a new subscription for new version,201,Created,API Publisher 1-1,text,true,,464,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,55,0,0
+1554366253991,289,Invoke the API new version,200,OK,API Publisher 1-1,text,true,,1342,712,1,1,https://localhost:8243/soapapicheck/2.0.0/order,289,0,9
+1554366254282,1084,Creator create a new API with limited visibility,201,Created,API Publisher 1-1,text,true,,2444,2759,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,1084,0,0
+1554366255369,610,Publish the API that has limited visibility ,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=b3f8c81d-cf11-4788-b77e-ac5453b7a6a4&action=Publish,610,0,0
+1554366255982,103,List of available APIs from Store by apipublisher,200,OK,API Publisher 1-1,text,true,,1765,201,1,1,https://localhost:9443/api/am/store/v0.11/apis,103,0,5
+1554366256094,1156,Creator create a new scope changed SOAP API,201,Created,API Publisher 1-1,text,true,,2692,3006,1,1,https://localhost:9443/api/am/publisher/v0.11/apis,1156,0,0
+1554366257258,463,Publisher changing API status to Publish,200,OK,API Publisher 1-1,,true,,103,332,1,1,https://localhost:9443/api/am/publisher/v0.11/apis/change-lifecycle?apiId=82ad1600-f29e-414d-91c2-0f505a638a16&action=Publish,463,0,0
+1554366257724,35,Create a new application,201,Created,API Publisher 1-1,text,true,,536,436,1,1,https://localhost:9443/api/am/store/v0.11/applications,35,0,0
+1554366257763,44,Add a new subscription,201,Created,API Publisher 1-1,text,true,,471,419,1,1,https://localhost:9443/api/am/store/v0.11/subscriptions,43,0,0
+1554366257809,244,Generate keys for application,200,OK,API Publisher 1-1,text,true,,558,421,1,1,https://localhost:9443/api/am/store/v0.11/applications/generate-keys?applicationId=d99866a0-8b80-4bb3-8b47-bb712cb5bfdb,244,0,0
+1554366258056,54,Generate the access token for scope test,200,OK,API Publisher 1-1,text,true,,452,385,1,1,https://localhost:8243/token,54,0,4
+1554366258113,287,Invoke the API,200,OK,API Publisher 1-1,text,true,,1342,705,1,1,https://localhost:8243/scope/1.0.0/order,287,0,0
+1555046565786,874,creator role creation,202,Accepted,Thread Group 1-1,text,true,,333,1384,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,873,0,303
+1555046566686,61,apicreator user creation,202,Accepted,Thread Group 1-1,text,true,,333,927,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,61,0,0
+1555046566751,87,publisher role creation,202,Accepted,Thread Group 1-1,text,true,,333,1001,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,87,0,0
+1555046566841,32,apipublisher user creation,202,Accepted,Thread Group 1-1,text,true,,333,935,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,32,0,0
+1555046566880,28,subscriber role creation,202,Accepted,Thread Group 1-1,text,true,,333,1004,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,28,0,0
+1555046566910,35,apisubscriber user creation,202,Accepted,Thread Group 1-1,text,true,,333,939,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,35,0,0
+1555047074204,1163,creator role creation,202,Accepted,Thread Group 1-1,text,true,,333,1384,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,1163,0,308
+1555047075381,34,apicreator user creation,202,Accepted,Thread Group 1-1,text,true,,333,927,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,34,0,0
+1555047075418,73,publisher role creation,202,Accepted,Thread Group 1-1,text,true,,333,1001,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,73,0,0
+1555047075493,50,apipublisher user creation,202,Accepted,Thread Group 1-1,text,true,,333,935,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,50,0,0
+1555047075546,49,subscriber role creation,202,Accepted,Thread Group 1-1,text,true,,333,1004,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,49,0,0
+1555047075617,20,apisubscriber user creation,202,Accepted,Thread Group 1-1,text,true,,333,939,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,20,0,0
+1555049699028,964,creator role creation,202,Accepted,Thread Group 1-1,text,true,,333,1384,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,964,0,401
+1555049700006,72,apicreator user creation,202,Accepted,Thread Group 1-1,text,true,,333,927,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,72,0,0
+1555049700080,116,publisher role creation,202,Accepted,Thread Group 1-1,text,true,,333,1001,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,116,0,0
+1555049700199,47,apipublisher user creation,202,Accepted,Thread Group 1-1,text,true,,333,935,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,47,0,0
+1555049700250,71,subscriber role creation,202,Accepted,Thread Group 1-1,text,true,,333,1004,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,71,0,0
+1555049700324,35,apisubscriber user creation,202,Accepted,Thread Group 1-1,text,true,,333,939,1,1,https://localhost:9443/services/RemoteUserStoreManagerService,35,0,0

@@ -2,52 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfd99d84-38c2-4f65-85e9-0910e683b091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenantloader_jar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/create_and_test_APIs_in_new_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/move_synapse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/reg_index_sql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/reindex_artifacts_registry_xml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_apim_client_migration_zip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_tenantloader_jar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/test_previous_version_APIs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components_post_actions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbUtil/copy_db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/copy_db_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbUtil/mysql_connection_old_apim.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/run_mysql_queries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbUtil/upgrade_databases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/edit.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/jmeter.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.jtl" beforeDir="false" afterPath="$PROJECT_DIR$/log.jtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/properties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/__init__" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/__init__" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/configuring_master_datasource.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/configuring_registry_xml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/configuring_user_mgt_xml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/copy_db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/copy_db_connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/copy_tenantloader_jar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenantloader_jar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/copy_tenants.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/create_and_test_APIs_in_new_version.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/create_and_test_APIs_in_new_version.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/create_users_and_roles__old_version.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/jmeter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/jmeter_data_population.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/log.jtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/move_synapse.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/move_synapse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/mysql_connection_old_apim.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/mysql_connection_old_apim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/reg_index_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/reg_index_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/reindex_artifacts_registry_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/reindex_artifacts_registry_xml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/remove_apim_client_migration_zip.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_apim_client_migration_zip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/remove_tenantloader_jar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_tenantloader_jar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/run_APIM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/run_gateway_artifacts_config_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/stop_running_APIM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/stop_running_APIM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/test_previous_version_APIs.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/test_previous_version_APIs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/unzippingAPIMs.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/upgrade_databases.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/upgrade_databases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/upgrade_identity_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pylibs/upgrade_identity_components_post_actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components_post_actions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uncomment-xml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000127.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000128.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000129.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000130.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000131.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000132.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000133.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000134.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000135.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/Scenario_001_APIM-000136.jmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/bin/Scenario_001_APIM.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/master-datasources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql-connector-java-8.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/bin/Scenario_005_APIM.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/bin/Validation_in_new_APIM.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/Validation_in_new_APIM.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/bin/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/jmeter.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/bin/rolesAndUsersCreation.jmx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +45,12 @@
     <SUITE FILE_PATH="coverage/Python$cima.coverage" NAME="cima Coverage Results" MODIFIED="1548659141570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$configuring_master_datasource.coverage" NAME="configuring_master_datasource Coverage Results" MODIFIED="1548659713636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$mysql_connection_old_apim.coverage" NAME="mysql_connection_old_apim Coverage Results" MODIFIED="1549366142079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mylibs" />
+    <SUITE FILE_PATH="coverage/Python$test_oracle.coverage" NAME="test_oracle Coverage Results" MODIFIED="1554715833558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$copy_db_connector.coverage" NAME="copy_db_connector Coverage Results" MODIFIED="1549538532914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
     <SUITE FILE_PATH="coverage/Python$test_previous_version_APIs.coverage" NAME="test_previous_version_APIs Coverage Results" MODIFIED="1549562501328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
     <SUITE FILE_PATH="coverage/Python$upgrade_identity_components_post_actions.coverage" NAME="upgrade_identity_components_post_actions Coverage Results" MODIFIED="1549343839355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$jmeter_data_population.coverage" NAME="jmeter_data_population Coverage Results" MODIFIED="1549599541411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
+    <SUITE FILE_PATH="coverage/Python$check.coverage" NAME="check Coverage Results" MODIFIED="1555049539758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$run_APIM.coverage" NAME="run_APIM Coverage Results" MODIFIED="1549554817316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
     <SUITE FILE_PATH="coverage/Python$reindex_artifacts_registry_xml.coverage" NAME="reindex_artifacts_registry_xml Coverage Results" MODIFIED="1549556452859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$stop_running_APIM.coverage" NAME="stop_running_APIM Coverage Results" MODIFIED="1549443315048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
@@ -73,10 +59,10 @@
     <SUITE FILE_PATH="coverage/Python$uncomment_xml.coverage" NAME="uncomment-xml Coverage Results" MODIFIED="1554283637480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$configuring_registry_xml.coverage" NAME="configuring_registry_xml Coverage Results" MODIFIED="1548675293128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$copy_tenants.coverage" NAME="copy_tenants Coverage Results" MODIFIED="1549250282009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1549522052971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$test.coverage" NAME="test Coverage Results" MODIFIED="1554917460611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$upgrade_identity_components.coverage" NAME="upgrade_identity_components Coverage Results" MODIFIED="1549554553189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
     <SUITE FILE_PATH="coverage/Python$edit.coverage" NAME="edit Coverage Results" MODIFIED="1554280072149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$sample.coverage" NAME="sample Coverage Results" MODIFIED="1554345887797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$sample.coverage" NAME="sample Coverage Results" MODIFIED="1555065233864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$copy_tenantloader_jar.coverage" NAME="copy_tenantloader_jar Coverage Results" MODIFIED="1549349351657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$run_gateway_artifacts_config_script.coverage" NAME="run_gateway_artifacts_config_script Coverage Results" MODIFIED="1549272571205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$unzippingAPIMs.coverage" NAME="unzippingAPIMs Coverage Results" MODIFIED="1549538473189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pylibs" />
@@ -106,20 +92,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="162">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DbUtil/mysql_connection_old_apim.py">
+        <entry file="file://$PROJECT_DIR$/DbUtil/run_mysql_queries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+            <state relative-caret-position="594">
+              <caret line="54" column="78" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -127,41 +122,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="288">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/reg_index_sql.py">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
+        <entry file="file://$PROJECT_DIR$/test_oracle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="92" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="92" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
+        <entry file="file:///usr/local/lib/python3.6/dist-packages/cx_Oracle/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="162">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -179,34 +168,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/move_synapse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DbUtil/copy_db_connector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="76" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="76" />
+            <state relative-caret-position="54">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,6 +209,7 @@
       <find>TO_NEW_PATH</find>
       <find>copydir</find>
       <find>pylibs</find>
+      <find>data</find>
     </findStrings>
     <replaceStrings>
       <replace>ApiManagerConfigUtil</replace>
@@ -240,24 +221,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/run_APIM.py" />
-        <option value="$PROJECT_DIR$/create_users_and_roles__old_version.py" />
-        <option value="$PROJECT_DIR$/jmeter_data_population.py" />
-        <option value="$PROJECT_DIR$/stop_running_APIM.py" />
-        <option value="$PROJECT_DIR$/pylibs/stop_running_APIM.py" />
-        <option value="$PROJECT_DIR$/pylibs/configuring_master_datasource.py" />
-        <option value="$PROJECT_DIR$/pylibs/configuring_registry_xml.py" />
-        <option value="$PROJECT_DIR$/pylibs/configuring_user_mgt_xml.py" />
-        <option value="$PROJECT_DIR$/move_synapse.py" />
-        <option value="$PROJECT_DIR$/copy_tenants.py" />
-        <option value="$PROJECT_DIR$/pylibs/move_synapse.py" />
-        <option value="$PROJECT_DIR$/pylibs/copy_tenants.py" />
         <option value="$PROJECT_DIR$/run_gateway_artifacts_config_script.py" />
         <option value="$PROJECT_DIR$/pylibs/run_gateway_artifacts_config_script.py" />
         <option value="$PROJECT_DIR$/upgrade_databases.py" />
         <option value="$PROJECT_DIR$/upgrade_identity_components.py" />
         <option value="$PROJECT_DIR$/pylibs/upgrade_identity_components.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/pylibs/copy_db_connector.py" />
         <option value="$PROJECT_DIR$/reg_index_sql.py" />
         <option value="$PROJECT_DIR$/pylibs/copy_tenantloader_jar.py" />
@@ -283,22 +251,35 @@
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_master_datasource.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/waiting.py" />
-        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/stop_running_APIM.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/uncomment-xml.py" />
-        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" />
-        <option value="$PROJECT_DIR$/properties.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/move_synapse.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" />
         <option value="$PROJECT_DIR$/DbUtil/mysql_connection_old_apim.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/remove_apim_client_migration_zip.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/remove_tenantloader_jar.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" />
+        <option value="$PROJECT_DIR$/test_oracle.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/DbUtil/copy_db_connector.py" />
+        <option value="$PROJECT_DIR$/check.py" />
+        <option value="$PROJECT_DIR$/DbUtil/run_mysql_queries.py" />
+        <option value="$PROJECT_DIR$/properties.py" />
         <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="263" />
-    <option name="y" value="80" />
-    <option name="width" value="1390" />
-    <option name="height" value="1000" />
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -335,22 +316,24 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/DbUtil" />
-      <recent name="$PROJECT_DIR$/DatBaseUtil" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/DbUtil" />
       <recent name="$PROJECT_DIR$/DataBaseUtil" />
       <recent name="$PROJECT_DIR$/DatBaseUtil" />
       <recent name="$PROJECT_DIR$/ApiMangerConfigUtil" />
       <recent name="$PROJECT_DIR$/pylibs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ApiMangerConfigUtil" />
+      <recent name="$PROJECT_DIR$/DbUtil" />
+      <recent name="$PROJECT_DIR$/DatBaseUtil" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,53 +349,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.sample">
-    <configuration name="create_and_test_APIs_in_new_version" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="JAVA_HOME" value="/usr/lib/jvm/java-8-openjdk-amd64" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pylibs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylibs/create_and_test_APIs_in_new_version.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_users_and_roles__old_version" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="JAVA_HOME" value="/usr/lib/jvm/java-8-openjdk-amd64" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pylibs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pylibs/create_users_and_roles__old_version.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="edit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="check" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -425,7 +362,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/edit.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -457,6 +394,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_oracle" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_oracle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="uncomment-xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -480,19 +461,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.create_and_test_APIs_in_new_version" />
-      <item itemvalue="Python.create_users_and_roles__old_version" />
       <item itemvalue="Python.sample" />
-      <item itemvalue="Python.edit" />
       <item itemvalue="Python.uncomment-xml" />
+      <item itemvalue="Python.test_oracle" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.check" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.sample" />
+        <item itemvalue="Python.check" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.test_oracle" />
         <item itemvalue="Python.uncomment-xml" />
-        <item itemvalue="Python.edit" />
-        <item itemvalue="Python.create_and_test_APIs_in_new_version" />
-        <item itemvalue="Python.create_users_and_roles__old_version" />
       </list>
     </recent_temporary>
   </component>
@@ -564,21 +545,66 @@
       <workItem from="1554339349356" duration="1944000" />
       <workItem from="1554341314445" duration="2844000" />
       <workItem from="1554344656434" duration="2202000" />
+      <workItem from="1554348204762" duration="7156000" />
+      <workItem from="1554355809359" duration="4418000" />
+      <workItem from="1554365547635" duration="7881000" />
+      <workItem from="1554442519743" duration="1681000" />
+      <workItem from="1554706271656" duration="8336000" />
+      <workItem from="1554718789277" duration="12336000" />
+      <workItem from="1554858208417" duration="1835000" />
+      <workItem from="1554869646543" duration="23523000" />
+      <workItem from="1554930368601" duration="5188000" />
+      <workItem from="1554959276204" duration="8750000" />
+      <workItem from="1555042138667" duration="6972000" />
+      <workItem from="1555051332729" duration="4554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282694000" />
+    <option name="totallyTimeSpent" value="375324000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="25" width="1875" height="1055" extended-state="6" />
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20721705" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23212379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2462203" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" weight="0.25917926" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" weight="0.40083945" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49917898" weight="0.3976915" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500821" side_tool="true" weight="0.39956802" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3822894" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32948583" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32937366" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32914162" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21377802" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2462203" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" visible="true" weight="0.16954644" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49917898" weight="0.39848813" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,7 +621,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32914162" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -620,6 +646,7 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="subprocess" language="Python" />
+        <watch expression="curs" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -627,6 +654,11 @@
     <expressions id="watch">
       <expression>
         <expression-string>subprocess</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>curs</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -645,28 +677,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/mysql/connector/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="493" selection-start-line="493" selection-end-line="493" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cima.py" />
-    <entry file="file://$PROJECT_DIR$/cima_final.py" />
-    <entry file="file://$PROJECT_DIR$/mysql.sql" />
-    <entry file="file://$PROJECT_DIR$/test.txt" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/mysql/connector/cursor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="558" selection-start-line="558" selection-end-line="558" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/__init__">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pylibs/conf_mysql_connection_old_apim.py" />
     <entry file="file:///usr/lib/python3.6/genericpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -683,13 +693,6 @@
     <entry file="file://$PROJECT_DIR$/log.jtl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jmeter.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -700,82 +703,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/reindex_artifacts_registry_xml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_apim_client_migration_zip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_tenantloader_jar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DbUtil/upgrade_databases.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components_post_actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -791,48 +724,12 @@
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_registry_xml.py" />
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_user_mgt_xml.py" />
     <entry file="file://$PROJECT_DIR$/DbUtil/__ini__" />
-    <entry file="file://$PROJECT_DIR$/edit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenantloader_jar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/create_and_test_APIs_in_new_version.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/edit.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/create_and_test_APIs_in_new_version.py" />
     <entry file="file:///usr/lib/python3.6/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1828">
-          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
         </state>
       </provider>
     </entry>
@@ -853,20 +750,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/test_previous_version_APIs.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/create_users_and_roles__old_version.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/jmeter_data_population.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="162">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/test_previous_version_APIs.py">
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        <state relative-caret-position="144">
+          <caret line="9" column="82" selection-start-line="8" selection-start-column="11" selection-end-line="9" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DbUtil/upgrade_databases.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenantloader_jar.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/reg_index_sql.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/upgrade_identity_components_post_actions.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_apim_client_migration_zip.py" />
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/reindex_artifacts_registry_xml.py" />
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -874,20 +787,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="92" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="92" />
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/freeport-0.1.9.dist-info/METADATA">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="42" column="96" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="96" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31320">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hs_err_pid6017.log" />
+    <entry file="file://$PROJECT_DIR$/hs_err_pid6111.log" />
+    <entry file="file://$PROJECT_DIR$/hs_err_pid6195.log" />
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/jaydebeapi/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="500" selection-start-line="500" selection-end-line="500" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_oracle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.6/dist-packages/cx_Oracle/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -901,68 +893,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/move_synapse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/copy_tenants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DbUtil/copy_db_connector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="76" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/create_users_and_roles__old_version.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="102" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/jmeter_data_population.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/reg_index_sql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DbUtil/mysql_connection_old_apim.py">
+    <entry file="file://$PROJECT_DIR$/DbUtil/run_mysql_queries.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state relative-caret-position="594">
+          <caret line="54" column="78" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -971,8 +932,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="162">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

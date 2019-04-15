@@ -21,6 +21,7 @@ def uncomment_xml(file, key_word):
 
 
 def edit_xml(file, key_word, phrase_to_replace):
+
     """This function will replace the code part in file by phrase_to_replace after searching by given key_word"""
 
     f = open(file, "r+")

@@ -35,16 +35,17 @@
 	       </jndiConfig>
 	       <definition type="RDBMS">
 		   <configuration>
-		       <url>jdbc:mysql://localhost:3306/regdb1?useSSL=false</url>
-		       <username>root</username>
-		       <password></password>
-		       <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
+		       <url>jdbc:postgresql://localhost:5432/regdb</url>
+                       <username>apimyasas</username>
+                       <password>apimyasas</password>
+                       <driverClassName>org.postgresql.Driver</driverClassName>
 		       <maxActive>80</maxActive>
 		       <maxWait>60000</maxWait>
 		       <minIdle>5</minIdle>
 		       <testOnBorrow>true</testOnBorrow>
 		       <validationQuery>SELECT 1</validationQuery>
 		       <validationInterval>30000</validationInterval>
+		       <defaultAutoCommit>false</defaultAutoCommit>
 		   </configuration>
 	       </definition>
 	</datasource>
@@ -58,16 +59,17 @@
 	       </jndiConfig>
 	       <definition type="RDBMS">
 		   <configuration>
-		       <url>jdbc:mysql://localhost:3306/userdb1?useSSL=false</url>
-		       <username>root</username>
-		       <password></password>
-		       <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
+		       <url>jdbc:postgresql://localhost:5432/userdb</url>
+                       <username>apimyasas</username>
+                       <password>apimyasas</password>
+                       <driverClassName>org.postgresql.Driver</driverClassName>
 		       <maxActive>80</maxActive>
 		       <maxWait>60000</maxWait>
 		       <minIdle>5</minIdle>
 		       <testOnBorrow>true</testOnBorrow>
 		       <validationQuery>SELECT 1</validationQuery>
 		       <validationInterval>30000</validationInterval>
+		       <defaultAutoCommit>false</defaultAutoCommit>
 		   </configuration>
 	       </definition>
 	</datasource>
@@ -81,17 +83,18 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:mysql://localhost:3306/amdb1?useSSL=false</url>
-		       <username>root</username>
-		       <password></password>
+		       <url>jdbc:postgresql://localhost:5432/amdb</url>
+                       <username>apimyasas</username>
+                       <password>apimyasas</password>
+                       <driverClassName>org.postgresql.Driver</driverClassName>
 		       <defaultAutoCommit>false</defaultAutoCommit>
-		       <driverClassName>com.mysql.cj.jdbc.Driver</driverClassName>
 		       <maxActive>80</maxActive>
 		       <maxWait>60000</maxWait>
 		       <minIdle>5</minIdle>
 		       <testOnBorrow>true</testOnBorrow>
 		       <validationQuery>SELECT 1</validationQuery>
 		       <validationInterval>30000</validationInterval>
+		       <defaultAutoCommit>false</defaultAutoCommit>
                 </configuration>
             </definition>
         </datasource>
