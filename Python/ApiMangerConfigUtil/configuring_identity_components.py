@@ -27,7 +27,7 @@ def upgrade_identity_components():
     subprocess.Popen(["gnome-terminal", "-e",
                       "%s/wso2am-%s/bin/wso2server.sh -Dmigrate -Dcomponent=identity" % (APIM_HOME_PATH, NEW_VERSION)])
 
-    print("Please manually check and stop(^c) the APIM server after it start...")
+    print("Please manually check and stop(^c) the APIM server after it get started...")
 
     ApiMangerConfigUtil.waiting.wait()
 
@@ -52,6 +52,6 @@ def access_control_migration_client():
     subprocess.Popen(["gnome-terminal", "-e",
                       "%s/wso2am-%s/bin/wso2server.sh -DmigrateAccessControl=true" % (APIM_HOME_PATH, NEW_VERSION)])
 
-    print("Please manually check and stop(^c) the APIM server after it start...")
+    print("Please manually check and stop(^c) the APIM server after it get started...")
 
     ApiMangerConfigUtil.waiting.wait()

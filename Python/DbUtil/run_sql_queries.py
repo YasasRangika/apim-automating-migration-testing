@@ -18,6 +18,7 @@ def run_sql_file(filename, db_name):
                 para += line
         para = para.replace('\n', ' ')
         para = para.replace('\t', ' ')
+
         if DB_TYPE == 'oracle':
             para = para.split('/')
         else:

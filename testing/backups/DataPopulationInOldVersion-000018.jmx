@@ -215,8 +215,9 @@
           <stringProp name="parameters"></stringProp>
           <boolProp name="resetInterpreter">false</boolProp>
           <stringProp name="script">import org.apache.commons.codec.binary.Base64;
-byte[] encodedUsernamePassword = Base64.encodeBase64((vars.get(&quot;clientId&quot;)+&quot;:&quot;+vars.get(&quot;clientSecret&quot;)).getBytes());
-vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</stringProp>
+//byte[] encodedUsernamePassword = Base64.encodeBase64(&quot;vars.get(&quot;clientId&quot;):vars.get(&quot;clientSecret)&quot;.getBytes());
+//vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));
+log.info(&quot;******************&quot;+vars.get(&quot;base64HeaderValue&quot;));</stringProp>
         </BeanShellPreProcessor>
         <hashTree/>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Generate the access token for Creator" enabled="true">

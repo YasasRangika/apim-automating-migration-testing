@@ -10,78 +10,81 @@ from ApiMangerConfigUtil.waiting import wait
 from ApiMangerConfigUtil.run_jmeter_scripts import runJmeter
 from ApiMangerConfigUtil.xml_file_change import *
 from DbUtil.copy_db_connector import copyDbConnector
-from DbUtil.run_mysql_queries import *
+from DbUtil.run_sql_queries import *
 
 
 def main():
-    # Unzipping all the given API Manager versions
-    unzipFiles()
-
-    # Copy database connector into repository/components/lib directory
-    copyDbConnector(APIM_HOME_PATH, OLD_VERSION)
-
-    # Create tables in provided database information
-    createTables()
-
-    # master-datasource.xml file changing
-    if DB_TYPE == 'mysql':
-
-        change_file("master-datasources.xml file", '../data/dbconnectors/mysql/master-datasources.xml',
-                    '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    elif DB_TYPE == 'oracle':
-
-        change_file("master-datasources.xml file", '../data/dbconnectors/oracle/master-datasources.xml',
-                    '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    elif DB_TYPE == 'mssql':
-
-        change_file("master-datasources.xml file", '../data/dbconnectors/mssql/master-datasources.xml',
-                    '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    elif DB_TYPE == 'postgresql':
-
-        change_file("master-datasources.xml file", '../data/dbconnectors/postgresql/master-datasources.xml',
-                    '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    else:
-        print("Database type provided is not valid when configuring master-datasource xml file!!!")
-
-    # registry.xml file changing
-    change_file("registry.xml file", '../data/API-M_%s/registry.xml' % OLD_VERSION,
-                '%s/wso2am-%s/repository/conf/registry.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    # user-mgt.xml file changing
-    change_file("user-mgt.xml", '../data/user-mgt.xml',
-                '%s/wso2am-%s/repository/conf/user-mgt.xml' % (APIM_HOME_PATH, OLD_VERSION))
-
-    # Copy backEndService.xml for testing purposes
-    # --This back end service will forward all the requests same as it received
-    # --For token validation
-    change_file("backEndService.xml file", "../data/backEndService.xml",
-                '%s/wso2am-%s/repository/deployment/server/synapse-configs/default/api/backEndService.xml' % (
-                    APIM_HOME_PATH, OLD_VERSION))
-
-    # Enabling JWT in api-manager.xml
-    # --This is for testing of jwt token in testing
-
-    # --Uncomment the jwt enabling phrase
-    uncomment_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "EnableJWTGeneration")
-
-    # --Change value of <EnableJWTGeneration> to true
-    edit_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "<EnableJWTGeneration>",
-             "\t<EnableJWTGeneration>true</EnableJWTGeneration> \n")
-
-    # --Change value of <JWTHeader> to jwt to use in testing process
-    edit_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "<JWTHeader>",
-             "\t<JWTHeader>jwt</JWTHeader> \n")
+    # # Unzipping all the given API Manager versions
+    # unzipFiles()
+    #
+    # # Copy database connector into repository/components/lib directory
+    # copyDbConnector(APIM_HOME_PATH, OLD_VERSION)
+    #
+    # # Create tables in provided database information
+    # createTables()
+    #
+    # # master-datasource.xml file changing
+    # if DB_TYPE == 'mysql':
+    #
+    #     change_file("master-datasources.xml file", '../data/dbconnectors/mysql/master-datasources.xml',
+    #                 '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # elif DB_TYPE == 'oracle':
+    #
+    #     change_file("master-datasources.xml file", '../data/dbconnectors/oracle/master-datasources.xml',
+    #                 '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # elif DB_TYPE == 'mssql':
+    #
+    #     change_file("master-datasources.xml file", '../data/dbconnectors/mssql/master-datasources.xml',
+    #                 '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # elif DB_TYPE == 'postgresql':
+    #
+    #     change_file("master-datasources.xml file", '../data/dbconnectors/postgresql/master-datasources.xml',
+    #                 '%s/wso2am-%s/repository/conf/datasources/master-datasources.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # else:
+    #     print("Database type provided is not valid when configuring master-datasource xml file!!!")
+    #
+    # # registry.xml file changing
+    # change_file("registry.xml file", '../data/API-M_%s/registry.xml' % OLD_VERSION,
+    #             '%s/wso2am-%s/repository/conf/registry.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # # user-mgt.xml file changing
+    # change_file("user-mgt.xml", '../data/user-mgt.xml',
+    #             '%s/wso2am-%s/repository/conf/user-mgt.xml' % (APIM_HOME_PATH, OLD_VERSION))
+    #
+    # # Copy backEndService.xml for testing purposes
+    # # --This back end service will forward all the requests same as it received
+    # # --For token validation
+    # change_file("backEndService.xml file", "../data/backEndService.xml",
+    #             '%s/wso2am-%s/repository/deployment/server/synapse-configs/default/api/backEndService.xml' % (
+    #                 APIM_HOME_PATH, OLD_VERSION))
+    #
+    # # Enabling JWT in api-manager.xml
+    # # --This is for testing of jwt token in testing
+    #
+    # # --Uncomment the jwt enabling phrase
+    # uncomment_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "EnableJWTGeneration")
+    #
+    # # --Change value of <EnableJWTGeneration> to true
+    # edit_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "<EnableJWTGeneration>",
+    #          "\t<EnableJWTGeneration>true</EnableJWTGeneration> \n")
+    #
+    # # --Change value of <JWTHeader> to jwt to use in testing process
+    # edit_xml('%s/wso2am-%s/repository/conf/api-manager.xml' % (APIM_HOME_PATH, OLD_VERSION), "<JWTHeader>",
+    #          "\t<JWTHeader>jwt</JWTHeader> \n")
 
     # run old API Manger version with database connection
-    runAPIM(APIM_HOME_PATH, OLD_VERSION)
+    # runAPIM(APIM_HOME_PATH, OLD_VERSION)
+    runAPIM()
+    # os.system("gnome-terminal -e /home/yasas/Videos/testing2/wso2am-2.1.0/bin/wso2server.sh")
+    # subprocess.Popen(["gnome-terminal", "-e", "/home/yasas/Videos/testing2/wso2am-2.1.0/bin/wso2server.sh"])
+    # subprocess.Popen(["gnome-terminal", "-e", "%s/wso2am-%s/bin/wso2server.sh" % (APIM_HOME_PATH, OLD_VERSION)])
 
-    # Waiting till server getting started
-    wait();
-    print("Done!!!")
+    # # Waiting till server getting started
+    # wait()
 
     # # Run users and roles creation JMeter script on running APIM
     # runJmeter("RolesAndUsersCreation")

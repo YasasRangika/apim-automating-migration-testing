@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.0 r1840935">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test cases(Mixed)" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Integration Testing" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
@@ -45,7 +45,7 @@
           </elementProp>
           <elementProp name="vNum" elementType="Argument">
             <stringProp name="Argument.name">vNum</stringProp>
-            <stringProp name="Argument.value">v0.11</stringProp>
+            <stringProp name="Argument.value">v0.13</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -90,22 +90,22 @@
             </elementProp>
             <elementProp name="app" elementType="Argument">
               <stringProp name="Argument.name">app</stringProp>
-              <stringProp name="Argument.value">SampleApplication001</stringProp>
+              <stringProp name="Argument.value">SampleApplication005</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="app_new" elementType="Argument">
               <stringProp name="Argument.name">app_new</stringProp>
-              <stringProp name="Argument.value">SampleApplication002</stringProp>
+              <stringProp name="Argument.value">SampleApplication006</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="app2" elementType="Argument">
               <stringProp name="Argument.name">app2</stringProp>
-              <stringProp name="Argument.value">SampleApplication003</stringProp>
+              <stringProp name="Argument.value">SampleApplication007</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="app_new2" elementType="Argument">
               <stringProp name="Argument.name">app_new2</stringProp>
-              <stringProp name="Argument.value">SampleApplication004</stringProp>
+              <stringProp name="Argument.value">SampleApplication008</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="RUN_LOOP" elementType="Argument">
@@ -115,22 +115,22 @@
             </elementProp>
             <elementProp name="app3" elementType="Argument">
               <stringProp name="Argument.name">app3</stringProp>
-              <stringProp name="Argument.value">ScopeCheckApp001</stringProp>
+              <stringProp name="Argument.value">ScopeCheckApp002</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="jwtapp" elementType="Argument">
               <stringProp name="Argument.name">jwtapp</stringProp>
-              <stringProp name="Argument.value">JWTApplication001</stringProp>
+              <stringProp name="Argument.value">JWTApplication002</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="soapApp" elementType="Argument">
               <stringProp name="Argument.name">soapApp</stringProp>
-              <stringProp name="Argument.value">SoapApplication001</stringProp>
+              <stringProp name="Argument.value">SoapApplication003</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
             <elementProp name="soapapp3" elementType="Argument">
               <stringProp name="Argument.name">soapapp3</stringProp>
-              <stringProp name="Argument.value">SoapApplication002</stringProp>
+              <stringProp name="Argument.value">SoapApplication004</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
@@ -145,7 +145,7 @@
                 <stringProp name="Argument.value">{&#xd;
 	&quot;callbackUrl&quot;: &quot;www.google.lk&quot;,&#xd;
       &quot;clientName&quot;: &quot;rest_api_publisher&quot;,&#xd;
-      &quot;owner&quot;: &quot;admin&quot;,&#xd;
+      &quot;owner&quot;: &quot;apisubscriber&quot;,&#xd;
       &quot;grantType&quot;: &quot;password refresh_token&quot;,&#xd;
       &quot;saasApp&quot;: true&#xd;
 }&#xd;
@@ -573,9 +573,9 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;PizzaShackAPI&quot;,&#xd;
+   &quot;name&quot;: &quot;PizzaShackAPINew&quot;,&#xd;
    &quot;description&quot;: &quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\r\n&quot;,&#xd;
-   &quot;context&quot;: &quot;/pizzashack&quot;,&#xd;
+   &quot;context&quot;: &quot;/pizzashacknew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/order\&quot;:{\&quot;post\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Create a new Order\&quot;,\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Order object that needs to be added\&quot;,\&quot;name\&quot;:\&quot;body\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;}],\&quot;responses\&quot;:{\&quot;201\&quot;:{\&quot;headers\&quot;:{\&quot;Location\&quot;:{\&quot;description\&quot;:\&quot;The URL of the newly created resource.\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Created.\&quot;}}}},\&quot;/menu\&quot;:{\&quot;get\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Return a list of available menu items\&quot;,\&quot;parameters\&quot;:[],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;headers\&quot;:{},\&quot;schema\&quot;:{\&quot;title\&quot;:\&quot;Menu\&quot;,\&quot;properties\&quot;:{\&quot;list\&quot;:{\&quot;items\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/MenuItem\&quot;},\&quot;type\&quot;:\&quot;array\&quot;}},\&quot;type\&quot;:\&quot;object\&quot;},\&quot;description\&quot;:\&quot;OK.\&quot;}}}}},\&quot;schemes\&quot;:[\&quot;https\&quot;],\&quot;produces\&quot;:[\&quot;application/json\&quot;],\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;definitions\&quot;:{\&quot;MenuItem\&quot;:{\&quot;title\&quot;:\&quot;Pizza menu Item\&quot;,\&quot;properties\&quot;:{\&quot;price\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;name\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;image\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;required\&quot;:[\&quot;name\&quot;]},\&quot;Order\&quot;:{\&quot;title\&quot;:\&quot;Pizza Order\&quot;,\&quot;properties\&quot;:{\&quot;customerName\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;delivered\&quot;:{\&quot;type\&quot;:\&quot;boolean\&quot;},\&quot;address\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;pizzaType\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;creditCardNumber\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;quantity\&quot;:{\&quot;type\&quot;:\&quot;number\&quot;},\&quot;orderId\&quot;:{\&quot;type\&quot;:\&quot;integer\&quot;}},\&quot;required\&quot;:[\&quot;orderId\&quot;]}},\&quot;consumes\&quot;:[\&quot;application/json\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;PizzaShackAPI\&quot;,\&quot;description\&quot;:\&quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\\n\&quot;,\&quot;license\&quot;:{\&quot;name\&quot;:\&quot;Apache 2.0\&quot;,\&quot;url\&quot;:\&quot;http://www.apache.org/licenses/LICENSE-2.0.html\&quot;},\&quot;contact\&quot;:{\&quot;email\&quot;:\&quot;architecture@pizzashack.com\&quot;,\&quot;name\&quot;:\&quot;John Doe\&quot;,\&quot;url\&quot;:\&quot;http://www.pizzashack.com\&quot;},\&quot;version\&quot;:\&quot;1.0.0\&quot;}}&quot;,&#xd;
@@ -1388,9 +1388,9 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;PizzaShackAPI_limited&quot;,&#xd;
+   &quot;name&quot;: &quot;PizzaShackAPI_limitedNew&quot;,&#xd;
    &quot;description&quot;: &quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\r\n&quot;,&#xd;
-   &quot;context&quot;: &quot;/pizzashack_limited&quot;,&#xd;
+   &quot;context&quot;: &quot;/pizzashack_limitednew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/order\&quot;:{\&quot;post\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Create a new Order\&quot;,\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Order object that needs to be added\&quot;,\&quot;name\&quot;:\&quot;body\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;}],\&quot;responses\&quot;:{\&quot;201\&quot;:{\&quot;headers\&quot;:{\&quot;Location\&quot;:{\&quot;description\&quot;:\&quot;The URL of the newly created resource.\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Created.\&quot;}}}},\&quot;/menu\&quot;:{\&quot;get\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Return a list of available menu items\&quot;,\&quot;parameters\&quot;:[],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;headers\&quot;:{},\&quot;schema\&quot;:{\&quot;title\&quot;:\&quot;Menu\&quot;,\&quot;properties\&quot;:{\&quot;list\&quot;:{\&quot;items\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/MenuItem\&quot;},\&quot;type\&quot;:\&quot;array\&quot;}},\&quot;type\&quot;:\&quot;object\&quot;},\&quot;description\&quot;:\&quot;OK.\&quot;}}}}},\&quot;schemes\&quot;:[\&quot;https\&quot;],\&quot;produces\&quot;:[\&quot;application/json\&quot;],\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;definitions\&quot;:{\&quot;MenuItem\&quot;:{\&quot;title\&quot;:\&quot;Pizza menu Item\&quot;,\&quot;properties\&quot;:{\&quot;price\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;name\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;image\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;required\&quot;:[\&quot;name\&quot;]},\&quot;Order\&quot;:{\&quot;title\&quot;:\&quot;Pizza Order\&quot;,\&quot;properties\&quot;:{\&quot;customerName\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;delivered\&quot;:{\&quot;type\&quot;:\&quot;boolean\&quot;},\&quot;address\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;pizzaType\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;creditCardNumber\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;quantity\&quot;:{\&quot;type\&quot;:\&quot;number\&quot;},\&quot;orderId\&quot;:{\&quot;type\&quot;:\&quot;integer\&quot;}},\&quot;required\&quot;:[\&quot;orderId\&quot;]}},\&quot;consumes\&quot;:[\&quot;application/json\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;PizzaShackAPI\&quot;,\&quot;description\&quot;:\&quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\\n\&quot;,\&quot;license\&quot;:{\&quot;name\&quot;:\&quot;Apache 2.0\&quot;,\&quot;url\&quot;:\&quot;http://www.apache.org/licenses/LICENSE-2.0.html\&quot;},\&quot;contact\&quot;:{\&quot;email\&quot;:\&quot;architecture@pizzashack.com\&quot;,\&quot;name\&quot;:\&quot;John Doe\&quot;,\&quot;url\&quot;:\&quot;http://www.pizzashack.com\&quot;},\&quot;version\&quot;:\&quot;1.0.0\&quot;}}&quot;,&#xd;
@@ -1579,6 +1579,10 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
             <boolProp name="IfController.useExpression">true</boolProp>
           </IfController>
           <hashTree>
+            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+              <stringProp name="ConstantTimer.delay">5000</stringProp>
+            </ConstantTimer>
+            <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="List of available APIs from Store by admin" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
                 <collectionProp name="Arguments.arguments"/>
@@ -1615,7 +1619,7 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <hashTree/>
               <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check API count" enabled="true">
                 <stringProp name="JSON_PATH">$.count</stringProp>
-                <stringProp name="EXPECTED_VALUE">3</stringProp>
+                <stringProp name="EXPECTED_VALUE">13</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
                 <boolProp name="EXPECT_NULL">false</boolProp>
                 <boolProp name="INVERT">false</boolProp>
@@ -1627,14 +1631,10 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <boolProp name="resetInterpreter">false</boolProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
-              <stringProp name="script">if (${api_count} == 3) {
+              <stringProp name="script">if (${api_count} == 13) {
     vars.put(&quot;RUN_LOOP&quot;,&quot;false&quot;);
 }</stringProp>
             </BeanShellPreProcessor>
-            <hashTree/>
-            <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
-              <stringProp name="ConstantTimer.delay">5000</stringProp>
-            </ConstantTimer>
             <hashTree/>
           </hashTree>
         </hashTree>
@@ -1718,7 +1718,7 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check API count" enabled="true">
             <stringProp name="JSON_PATH">$.count</stringProp>
-            <stringProp name="EXPECTED_VALUE">2</stringProp>
+            <stringProp name="EXPECTED_VALUE">10</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
@@ -2065,9 +2065,9 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;xmltest&quot;,&#xd;
+   &quot;name&quot;: &quot;xmltestNew&quot;,&#xd;
    &quot;description&quot;: &quot;This document describe a RESTFul API for xmltest.\r\n&quot;,&#xd;
-   &quot;context&quot;: &quot;/xmltest&quot;,&#xd;
+   &quot;context&quot;: &quot;/xmltestnew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;: &quot;{\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;paths\&quot;:{\&quot;/xml\&quot;:{\&quot;get\&quot;:{\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;}}},\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;xml\&quot;,\&quot;version\&quot;:\&quot;1\&quot;}}&quot;,&#xd;
@@ -2486,12 +2486,12 @@ vars.put(&quot;base64HeaderValue&quot;,new String(encodedUsernamePassword));</st
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;PizzaScopes&quot;,&#xd;
+   &quot;name&quot;: &quot;PizzaScopesNew&quot;,&#xd;
    &quot;description&quot;: &quot;Pizzashack API to check scopes.\r\n&quot;,&#xd;
-   &quot;context&quot;: &quot;/pizzashackscops&quot;,&#xd;
+   &quot;context&quot;: &quot;/pizzashackscopsnew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
-   &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/order\&quot;:{\&quot;post\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Create a new Order\&quot;,\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Order object that needs to be added\&quot;,\&quot;name\&quot;:\&quot;body\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;}],\&quot;responses\&quot;:{\&quot;201\&quot;:{\&quot;headers\&quot;:{\&quot;Location\&quot;:{\&quot;description\&quot;:\&quot;The URL of the newly created resource.\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Created.\&quot;}},\&quot;x-scope\&quot;:\&quot;order_add\&quot;}},\&quot;/menu\&quot;:{\&quot;get\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Return a list of available menu items\&quot;,\&quot;parameters\&quot;:[],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;headers\&quot;:{},\&quot;schema\&quot;:{\&quot;title\&quot;:\&quot;Menu\&quot;,\&quot;properties\&quot;:{\&quot;list\&quot;:{\&quot;items\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/MenuItem\&quot;},\&quot;type\&quot;:\&quot;array\&quot;}},\&quot;type\&quot;:\&quot;object\&quot;},\&quot;description\&quot;:\&quot;OK.\&quot;}},\&quot;x-scope\&quot;:\&quot;item_view\&quot;}}},\&quot;schemes\&quot;:[\&quot;https\&quot;],\&quot;produces\&quot;:[\&quot;application/json\&quot;],\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;definitions\&quot;:{\&quot;MenuItem\&quot;:{\&quot;title\&quot;:\&quot;Pizza menu Item\&quot;,\&quot;properties\&quot;:{\&quot;price\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;name\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;image\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;required\&quot;:[\&quot;name\&quot;]},\&quot;Order\&quot;:{\&quot;title\&quot;:\&quot;Pizza Order\&quot;,\&quot;properties\&quot;:{\&quot;customerName\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;delivered\&quot;:{\&quot;type\&quot;:\&quot;boolean\&quot;},\&quot;address\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;pizzaType\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;creditCardNumber\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;quantity\&quot;:{\&quot;type\&quot;:\&quot;number\&quot;},\&quot;orderId\&quot;:{\&quot;type\&quot;:\&quot;integer\&quot;}},\&quot;required\&quot;:[\&quot;orderId\&quot;]}},\&quot;consumes\&quot;:[\&quot;application/json\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;PizzaShackAPI\&quot;,\&quot;description\&quot;:\&quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\\n\&quot;,\&quot;license\&quot;:{\&quot;name\&quot;:\&quot;Apache 2.0\&quot;,\&quot;url\&quot;:\&quot;http://www.apache.org/licenses/LICENSE-2.0.html\&quot;},\&quot;contact\&quot;:{\&quot;email\&quot;:\&quot;architecture@pizzashack.com\&quot;,\&quot;name\&quot;:\&quot;John Doe\&quot;,\&quot;url\&quot;:\&quot;http://www.pizzashack.com\&quot;},\&quot;version\&quot;:\&quot;1.0.0\&quot;},\&quot;x-wso2-security\&quot;:{\&quot;apim\&quot;:{\&quot;x-wso2-scopes\&quot;:[{\&quot;name\&quot;:\&quot;view items\&quot;,\&quot;description\&quot;:\&quot;This scope will enable viewing items \&quot;,\&quot;key\&quot;:\&quot;item_view\&quot;,\&quot;roles\&quot;:\&quot;publisher,admin,subscriber\&quot;},{\&quot;name\&quot;:\&quot;Add orders\&quot;,\&quot;description\&quot;:\&quot;This scope will be used to add orders.\&quot;,\&quot;key\&quot;:\&quot;order_add\&quot;,\&quot;roles\&quot;:\&quot;subscriber\&quot;}]}}}&quot;,&#xd;
+   &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/order\&quot;:{\&quot;post\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Create a new Order\&quot;,\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Order object that needs to be added\&quot;,\&quot;name\&quot;:\&quot;body\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;}],\&quot;responses\&quot;:{\&quot;201\&quot;:{\&quot;headers\&quot;:{\&quot;Location\&quot;:{\&quot;description\&quot;:\&quot;The URL of the newly created resource.\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;schema\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/Order\&quot;},\&quot;description\&quot;:\&quot;Created.\&quot;}},\&quot;x-scope\&quot;:\&quot;order_add_new\&quot;}},\&quot;/menu\&quot;:{\&quot;get\&quot;:{\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;description\&quot;:\&quot;Return a list of available menu items\&quot;,\&quot;parameters\&quot;:[],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;headers\&quot;:{},\&quot;schema\&quot;:{\&quot;title\&quot;:\&quot;Menu\&quot;,\&quot;properties\&quot;:{\&quot;list\&quot;:{\&quot;items\&quot;:{\&quot;$ref\&quot;:\&quot;#/definitions/MenuItem\&quot;},\&quot;type\&quot;:\&quot;array\&quot;}},\&quot;type\&quot;:\&quot;object\&quot;},\&quot;description\&quot;:\&quot;OK.\&quot;}},\&quot;x-scope\&quot;:\&quot;item_view_new\&quot;}}},\&quot;schemes\&quot;:[\&quot;https\&quot;],\&quot;produces\&quot;:[\&quot;application/json\&quot;],\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;definitions\&quot;:{\&quot;MenuItem\&quot;:{\&quot;title\&quot;:\&quot;Pizza menu Item\&quot;,\&quot;properties\&quot;:{\&quot;price\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;name\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;image\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;}},\&quot;required\&quot;:[\&quot;name\&quot;]},\&quot;Order\&quot;:{\&quot;title\&quot;:\&quot;Pizza Order\&quot;,\&quot;properties\&quot;:{\&quot;customerName\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;delivered\&quot;:{\&quot;type\&quot;:\&quot;boolean\&quot;},\&quot;address\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;pizzaType\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;creditCardNumber\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;quantity\&quot;:{\&quot;type\&quot;:\&quot;number\&quot;},\&quot;orderId\&quot;:{\&quot;type\&quot;:\&quot;integer\&quot;}},\&quot;required\&quot;:[\&quot;orderId\&quot;]}},\&quot;consumes\&quot;:[\&quot;application/json\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;PizzaShackAPI\&quot;,\&quot;description\&quot;:\&quot;This document describe a RESTFul API for Pizza Shack online pizza delivery store.\\n\&quot;,\&quot;license\&quot;:{\&quot;name\&quot;:\&quot;Apache 2.0\&quot;,\&quot;url\&quot;:\&quot;http://www.apache.org/licenses/LICENSE-2.0.html\&quot;},\&quot;contact\&quot;:{\&quot;email\&quot;:\&quot;architecture@pizzashack.com\&quot;,\&quot;name\&quot;:\&quot;John Doe\&quot;,\&quot;url\&quot;:\&quot;http://www.pizzashack.com\&quot;},\&quot;version\&quot;:\&quot;1.0.0\&quot;},\&quot;x-wso2-security\&quot;:{\&quot;apim\&quot;:{\&quot;x-wso2-scopes\&quot;:[{\&quot;name\&quot;:\&quot;view items\&quot;,\&quot;description\&quot;:\&quot;This scope will enable viewing items \&quot;,\&quot;key\&quot;:\&quot;item_view_new\&quot;,\&quot;roles\&quot;:\&quot;publisher,admin,subscriber\&quot;},{\&quot;name\&quot;:\&quot;Add orders\&quot;,\&quot;description\&quot;:\&quot;This scope will be used to add orders.\&quot;,\&quot;key\&quot;:\&quot;order_add_new\&quot;,\&quot;roles\&quot;:\&quot;subscriber\&quot;}]}}}&quot;,&#xd;
    &quot;wsdlUri&quot;: null,&#xd;
    &quot;responseCaching&quot;: &quot;Disabled&quot;,&#xd;
    &quot;cacheTimeout&quot;: 300,&#xd;
@@ -2879,7 +2879,7 @@ vars.put(&quot;base64Value&quot;,new String(encodedUsernamePassword));</stringPr
               </elementProp>
               <elementProp name="scope" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">order_add</stringProp>
+                <stringProp name="Argument.value">order_add_new</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">scope</stringProp>
@@ -3009,9 +3009,9 @@ vars.put(&quot;base64Value&quot;,new String(encodedUsernamePassword));</stringPr
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;JWTTestAPI&quot;,&#xd;
+   &quot;name&quot;: &quot;JWTTestAPINew&quot;,&#xd;
    &quot;description&quot;: &quot;This document test jwt.\r\n&quot;,&#xd;
-   &quot;context&quot;: &quot;/jwtTesting&quot;,&#xd;
+   &quot;context&quot;: &quot;/jwtTestingnew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;:&quot;{\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;paths\&quot;:{\&quot;/jwttest\&quot;:{\&quot;get\&quot;:{\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;},\&quot;post\&quot;:{\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;\&quot;}},\&quot;parameters\&quot;:[{\&quot;name\&quot;:\&quot;Payload\&quot;,\&quot;description\&quot;:\&quot;Request Body\&quot;,\&quot;required\&quot;:false,\&quot;in\&quot;:\&quot;body\&quot;,\&quot;schema\&quot;:{\&quot;type\&quot;:\&quot;object\&quot;,\&quot;properties\&quot;:{\&quot;payload\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;}}}}],\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;}}},\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;JWTTestAPI\&quot;,\&quot;version\&quot;:\&quot;1.0.0\&quot;}}&quot;,&#xd;
@@ -3474,7 +3474,7 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="-2130190007">&quot;http:\/\/wso2.org\/claims\/apicontext&quot;:&quot;\/jwtTesting\/1.0.0&quot;</stringProp>
+              <stringProp name="2028189175">&quot;http:\/\/wso2.org\/claims\/apicontext&quot;:&quot;\/jwtTestingnew\/1.0.0&quot;</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
@@ -3498,9 +3498,9 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;SoapAPICheck&quot;,&#xd;
+   &quot;name&quot;: &quot;SoapAPICheckNew&quot;,&#xd;
    &quot;description&quot;: &quot;Soap API creation&quot;,&#xd;
-   &quot;context&quot;: &quot;/soapapicheck&quot;,&#xd;
+   &quot;context&quot;: &quot;/soapapichecknew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/*\&quot;:{\&quot;post\&quot;:{\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:\&quot;SOAP request.\&quot;,\&quot;name\&quot;:\&quot;SOAP Request\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;},{\&quot;description\&quot;:\&quot;SOAPAction header for soap 1.1\&quot;,\&quot;name\&quot;:\&quot;SOAPAction\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;required\&quot;:false,\&quot;in\&quot;:\&quot;header\&quot;}],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;OK\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;}}},\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;consumes\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;produces\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;SoapAPI\&quot;,\&quot;version\&quot;:\&quot;1.0\&quot;}}&quot;,&#xd;
@@ -4287,9 +4287,9 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;SoapAPICheck_limited&quot;,&#xd;
+   &quot;name&quot;: &quot;SoapAPICheck_limitedNew&quot;,&#xd;
    &quot;description&quot;: &quot;Soap API creation&quot;,&#xd;
-   &quot;context&quot;: &quot;/soapapicheckltd&quot;,&#xd;
+   &quot;context&quot;: &quot;/soapapicheckltdnew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
    &quot;apiDefinition&quot;: &quot;{\&quot;paths\&quot;:{\&quot;/*\&quot;:{\&quot;post\&quot;:{\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:\&quot;SOAP request.\&quot;,\&quot;name\&quot;:\&quot;SOAP Request\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;},{\&quot;description\&quot;:\&quot;SOAPAction header for soap 1.1\&quot;,\&quot;name\&quot;:\&quot;SOAPAction\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;required\&quot;:false,\&quot;in\&quot;:\&quot;header\&quot;}],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;OK\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;}}},\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;consumes\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;produces\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;SoapAPI\&quot;,\&quot;version\&quot;:\&quot;1.0\&quot;}}&quot;,&#xd;
@@ -4501,7 +4501,7 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="" elementType="Header">
                     <stringProp name="Header.name">Authorization</stringProp>
-                    <stringProp name="Header.value">Bearer ${accessToken_admin}</stringProp>
+                    <stringProp name="Header.value">Bearer ${accessToken_subscriber}</stringProp>
                   </elementProp>
                 </collectionProp>
               </HeaderManager>
@@ -4514,7 +4514,7 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
               <hashTree/>
               <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check API count" enabled="true">
                 <stringProp name="JSON_PATH">$.count</stringProp>
-                <stringProp name="EXPECTED_VALUE">10</stringProp>
+                <stringProp name="EXPECTED_VALUE">12</stringProp>
                 <boolProp name="JSONVALIDATION">true</boolProp>
                 <boolProp name="EXPECT_NULL">false</boolProp>
                 <boolProp name="INVERT">false</boolProp>
@@ -4526,7 +4526,7 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
               <boolProp name="resetInterpreter">false</boolProp>
               <stringProp name="parameters"></stringProp>
               <stringProp name="filename"></stringProp>
-              <stringProp name="script">if (${api_count} == 10) {
+              <stringProp name="script">if (${api_count} == 12) {
     vars.put(&quot;RUN_LOOP&quot;,&quot;false&quot;);
 }</stringProp>
             </BeanShellPreProcessor>
@@ -4573,7 +4573,7 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
           <hashTree/>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="Check API count" enabled="true">
             <stringProp name="JSON_PATH">$.count</stringProp>
-            <stringProp name="EXPECTED_VALUE">7</stringProp>
+            <stringProp name="EXPECTED_VALUE">14</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
             <boolProp name="INVERT">false</boolProp>
@@ -4920,12 +4920,12 @@ vars.put(&quot;decodedJwtToken&quot;,new String(d));</stringProp>
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-   &quot;name&quot;: &quot;ScopeChangedSoapAPI&quot;,&#xd;
+   &quot;name&quot;: &quot;ScopeChangedSoapAPINew&quot;,&#xd;
    &quot;description&quot;: &quot;Soap API creation&quot;,&#xd;
-   &quot;context&quot;: &quot;/scope&quot;,&#xd;
+   &quot;context&quot;: &quot;/scopenew&quot;,&#xd;
    &quot;version&quot;: &quot;1.0.0&quot;,&#xd;
    &quot;provider&quot;: &quot;admin&quot;,&#xd;
-   &quot;apiDefinition&quot;:&quot;{\&quot;paths\&quot;:{\&quot;/*\&quot;:{\&quot;post\&quot;:{\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:\&quot;SOAP request.\&quot;,\&quot;name\&quot;:\&quot;SOAP Request\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;},{\&quot;description\&quot;:\&quot;SOAPAction header for soap 1.1\&quot;,\&quot;name\&quot;:\&quot;SOAPAction\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;required\&quot;:false,\&quot;in\&quot;:\&quot;header\&quot;}],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;OK\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;x-scope\&quot;:\&quot;get_info\&quot;}}},\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;consumes\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;produces\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;ScopeChangedSoapAPI\&quot;,\&quot;version\&quot;:\&quot;1.0.0\&quot;},\&quot;x-wso2-security\&quot;:{\&quot;apim\&quot;:{\&quot;x-wso2-scopes\&quot;:[{\&quot;name\&quot;:\&quot;get information about phone number\&quot;,\&quot;description\&quot;:\&quot;This scope will enable viewing information about phone numbers\&quot;,\&quot;key\&quot;:\&quot;get_info\&quot;,\&quot;roles\&quot;:\&quot;subscriber\&quot;}]}}}&quot;,&#xd;
+   &quot;apiDefinition&quot;:&quot;{\&quot;paths\&quot;:{\&quot;/*\&quot;:{\&quot;post\&quot;:{\&quot;parameters\&quot;:[{\&quot;schema\&quot;:{\&quot;type\&quot;:\&quot;string\&quot;},\&quot;description\&quot;:\&quot;SOAP request.\&quot;,\&quot;name\&quot;:\&quot;SOAP Request\&quot;,\&quot;required\&quot;:true,\&quot;in\&quot;:\&quot;body\&quot;},{\&quot;description\&quot;:\&quot;SOAPAction header for soap 1.1\&quot;,\&quot;name\&quot;:\&quot;SOAPAction\&quot;,\&quot;type\&quot;:\&quot;string\&quot;,\&quot;required\&quot;:false,\&quot;in\&quot;:\&quot;header\&quot;}],\&quot;responses\&quot;:{\&quot;200\&quot;:{\&quot;description\&quot;:\&quot;OK\&quot;}},\&quot;x-auth-type\&quot;:\&quot;Application &amp; Application User\&quot;,\&quot;x-throttling-tier\&quot;:\&quot;Unlimited\&quot;,\&quot;x-scope\&quot;:\&quot;get_info_new\&quot;}}},\&quot;swagger\&quot;:\&quot;2.0\&quot;,\&quot;consumes\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;produces\&quot;:[\&quot;text/xml\&quot;,\&quot;application/soap+xml\&quot;],\&quot;info\&quot;:{\&quot;title\&quot;:\&quot;ScopeChangedSoapAPI\&quot;,\&quot;version\&quot;:\&quot;1.0.0\&quot;},\&quot;x-wso2-security\&quot;:{\&quot;apim\&quot;:{\&quot;x-wso2-scopes\&quot;:[{\&quot;name\&quot;:\&quot;get information about phone number\&quot;,\&quot;description\&quot;:\&quot;This scope will enable viewing information about phone numbers\&quot;,\&quot;key\&quot;:\&quot;get_info_new\&quot;,\&quot;roles\&quot;:\&quot;subscriber\&quot;}]}}}&quot;,&#xd;
    &quot;wsdlUri&quot;:&quot;http://ws.cdyne.com/phoneverify/phoneverify.asmx?wsdl&quot;,&#xd;
    &quot;responseCaching&quot;: &quot;Disabled&quot;,&#xd;
    &quot;cacheTimeout&quot;: 300,&#xd;
@@ -5313,7 +5313,7 @@ vars.put(&quot;base64Value&quot;,new String(encodedUsernamePassword));</stringPr
               </elementProp>
               <elementProp name="scope" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">get_info</stringProp>
+                <stringProp name="Argument.value">get_info_new</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 <stringProp name="Argument.name">scope</stringProp>

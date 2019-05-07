@@ -1,6 +1,6 @@
 # Enter path to your old_version_of_APIM.zip
 OLD_VERSION = "2.1.0"
-TO_OLD_PATH = "/home/yasas/Videos/testing1/wso2am-2.1.0.zip"
+TO_OLD_PATH = "/home/yasas/Videos/testing2/wso2am-2.1.0.zip"
 
 # Enter path to your new_version_of_APIM.zip
 NEW_VERSION = "2.5.0"
@@ -10,17 +10,17 @@ TO_NEW_PATH = "/home/yasas/Videos/testing2/wso2am-2.5.0.zip"
 APIM_HOME_PATH = "/home/yasas/Videos/testing2"
 
 # Database version want to keep(ex:mysql,oracle,mssql,postgresql)
-# DB_TYPE = "mysql"
+DB_TYPE = "mysql"
 # DB_TYPE = "oracle"
 # DB_TYPE = "mssql"
-DB_TYPE = "postgresql"
+# DB_TYPE = "postgresql"
 
 # --Database credentials
-# # mysql
-# USER_NAME = "yasas"
-# PWD = "yasas"
-# HOST = "localhost"
-# PORT = 3306
+# mysql
+USER_NAME = "yasas"
+PWD = "yasas"
+HOST = "localhost"
+PORT = 3306
 # # oracle
 # USER_NAME = "apimyasas7"
 # PWD = "apimyasas7"
@@ -31,13 +31,13 @@ DB_TYPE = "postgresql"
 # PWD = "apimyasas"
 # HOST = "192.168.104.8"
 # PORT = 1433
-# postgresql
-USER_NAME = "apimyasas"
-PWD = "apimyasas"
-HOST = "localhost"
-PORT = 5432
+# # postgresql
+# USER_NAME = "apimyasas"
+# PWD = "apimyasas"
+# HOST = "localhost"
+# PORT = 5432
 
-# --Database names for am database, registri database and user database
+# --Database names for am database, registry database and user database
 AM_DB = "amdb"
 REG_DB = "regdb"
 USER_DB = "userdb"
@@ -50,5 +50,5 @@ IS_CURRENT_VERSION = "5.3.0"
 IS_MIGRATE_VERSION = "5.6.0"
 
 # Give the path to JAVA_HOME
-JAVA_HOME="/home/yasas/Documents/WSO2/jdk1.8.0_45"
+JAVA_HOME="/usr/lib/jvm/java-8-oracle"
 #*************REMOVE THIS THING LATER

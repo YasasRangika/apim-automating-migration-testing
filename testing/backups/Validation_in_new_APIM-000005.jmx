@@ -104,8 +104,8 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;callbackUrl&quot;: &quot;www.google.lk&quot;,&#xd;
-      &quot;clientName&quot;: &quot;rest_api_publisher&quot;,&#xd;
-      &quot;owner&quot;: &quot;apisubscriber&quot;,&#xd;
+      &quot;clientName&quot;: &quot;rest_api_publisher1&quot;,&#xd;
+      &quot;owner&quot;: &quot;admin&quot;,&#xd;
       &quot;grantType&quot;: &quot;password refresh_token&quot;,&#xd;
       &quot;saasApp&quot;: true&#xd;
 }&#xd;
