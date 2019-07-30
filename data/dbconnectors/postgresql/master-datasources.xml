@@ -14,17 +14,17 @@
 	       </jndiConfig>
 	       <definition type="RDBMS">
 		   <configuration>
-		       <url>jdbc:postgresql://localhost:5432/regdb</url>
-                       <username>apimyasas</username>
-                       <password>apimyasas</password>
-                       <driverClassName>org.postgresql.Driver</driverClassName>
-		       <maxActive>80</maxActive>
-		       <maxWait>60000</maxWait>
-		       <minIdle>5</minIdle>
-		       <testOnBorrow>true</testOnBorrow>
-		       <validationQuery>SELECT 1</validationQuery>
-		       <validationInterval>30000</validationInterval>
-		       <defaultAutoCommit>true</defaultAutoCommit>
+		       	<url>jdbc:postgresql://localhost:5432/regdb</url>
+                       	<username>apimyasas</username>
+                       	<password>apimyasas</password>
+                       	<driverClassName>org.postgresql.Driver</driverClassName>
+		       	<maxActive>80</maxActive>
+                	<maxWait>60000</maxWait>
+                	<minIdle>5</minIdle>
+                	<testOnBorrow>true</testOnBorrow>
+                	<validationQuery>SELECT 1; COMMIT</validationQuery>
+                	<defaultAutoCommit>false</defaultAutoCommit>
+                	<validationInterval>30000</validationInterval>
 		   </configuration>
 	       </definition>
 	</datasource>
@@ -38,17 +38,17 @@
 	       </jndiConfig>
 	       <definition type="RDBMS">
 		   <configuration>
-		       <url>jdbc:postgresql://localhost:5432/userdb</url>
-                       <username>apimyasas</username>
-                       <password>apimyasas</password>
-                       <driverClassName>org.postgresql.Driver</driverClassName>
-		       <maxActive>80</maxActive>
-		       <maxWait>60000</maxWait>
-		       <minIdle>5</minIdle>
-		       <testOnBorrow>true</testOnBorrow>
-		       <validationQuery>SELECT 1</validationQuery>
-		       <validationInterval>30000</validationInterval>
-		       <defaultAutoCommit>true</defaultAutoCommit>
+		       	<url>jdbc:postgresql://localhost:5432/userdb</url>
+                       	<username>apimyasas</username>
+                       	<password>apimyasas</password>
+                       	<driverClassName>org.postgresql.Driver</driverClassName>
+		       	<maxActive>80</maxActive>
+		        <maxWait>60000</maxWait>
+		        <minIdle>5</minIdle>
+		        <testOnBorrow>true</testOnBorrow>
+		        <validationQuery>SELECT 1; COMMIT</validationQuery>
+		        <defaultAutoCommit>false</defaultAutoCommit>
+		        <validationInterval>30000</validationInterval>
 		   </configuration>
 	       </definition>
 	</datasource>
@@ -62,18 +62,18 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-		       <url>jdbc:postgresql://localhost:5432/amdb</url>
-                       <username>apimyasas</username>
-                       <password>apimyasas</password>
-                       <driverClassName>org.postgresql.Driver</driverClassName>
-		       <defaultAutoCommit>false</defaultAutoCommit>
-		       <maxActive>80</maxActive>
-		       <maxWait>60000</maxWait>
-		       <minIdle>5</minIdle>
-		       <testOnBorrow>true</testOnBorrow>
-		       <validationQuery>SELECT 1</validationQuery>
-		       <validationInterval>30000</validationInterval>
-		       <defaultAutoCommit>true</defaultAutoCommit>
+		       	<url>jdbc:postgresql://localhost:5432/amdb</url>
+                       	<username>apimyasas</username>
+                       	<password>apimyasas</password>
+                       	<driverClassName>org.postgresql.Driver</driverClassName>
+		       	<defaultAutoCommit>false</defaultAutoCommit>
+		       	<maxActive>80</maxActive>
+		        <maxWait>60000</maxWait>
+		        <minIdle>5</minIdle>
+		        <testOnBorrow>true</testOnBorrow>
+		        <validationQuery>SELECT 1; COMMIT</validationQuery>
+		        <defaultAutoCommit>false</defaultAutoCommit>
+		        <validationInterval>30000</validationInterval>
                 </configuration>
             </definition>
         </datasource>

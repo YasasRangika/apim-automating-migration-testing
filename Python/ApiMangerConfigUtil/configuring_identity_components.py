@@ -10,13 +10,13 @@ def upgrade_identity_components():
 
     """Upgrading identity componants"""
 
-    is_src = '../data/Identity_component_upgrade/wso2is-%s-migration' % IS_MIGRATE_VERSION
+    is_src = '../data/Identity_component_upgrade/wso2is-%s-migration' % IS_VERSION
     is_dest = '%s/wso2am-%s' % (APIM_HOME_PATH, NEW_VERSION)
 
     shutil.copytree('%s/migration-resources' % is_src, '%s/migration-resources' % is_dest)
 
     # Choose relevant IS version
-    if shutil.copy('%s/org.wso2.carbon.is.migration-%s.jar' % (is_src, IS_MIGRATE_VERSION),
+    if shutil.copy('%s/org.wso2.carbon.is.migration-%s.jar' % (is_src, IS_VERSION),
             '%s/repository/components/dropins' % is_dest):
         print("Successfully copied the wso2.carbon.is.migration JAR!")
 
@@ -40,8 +40,8 @@ def access_control_migration_client():
     if os.path.isdir(dir):
         shutil.rmtree(dir)
 
-    jar_dir = '%s/wso2am-%s/repository/components/dropins/org.wso2.carbon.is.migration-5.6.0.jar' % (
-        APIM_HOME_PATH, NEW_VERSION)
+    jar_dir = '%s/wso2am-%s/repository/components/dropins/org.wso2.carbon.is.migration-%s.jar' % (
+        APIM_HOME_PATH, NEW_VERSION, IS_VERSION)
     os.remove(jar_dir)
 
     if shutil.copy(

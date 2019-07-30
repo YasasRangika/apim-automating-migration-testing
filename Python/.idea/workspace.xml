@@ -2,30 +2,577 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfd99d84-38c2-4f65-85e9-0910e683b091" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DbUtil/run_mysql_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/run_sql_queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbUtil/run_sql_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/DbUtil/run_sql_queries.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/jmeter.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.jtl" beforeDir="false" afterPath="$PROJECT_DIR$/log.jtl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/properties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/dbconnectors/mssql/master-datasources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/dbconnectors/mssql/master-datasources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/dbconnectors/mysql/master-datasources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/dbconnectors/mysql/master-datasources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/dbconnectors/oracle/master-datasources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/dbconnectors/oracle/master-datasources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingtool.py" beforeDir="false" afterPath="$PROJECT_DIR$/testingtool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/migration-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/._wso2is-5.3.0-migration" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/._migration-resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/._org.wso2.carbon.is.migrate.client-5.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/._snakeyaml-1.16.0.wso2v1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._.DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.0.0-SP1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.2.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.3.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.4.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._5.5.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/._migration-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/._um" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/._um" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/._data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/data/._claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/data/._resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/._data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/data/._claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/._step2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/._um" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/._dbscripts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/._step1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/._step2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/._consent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/._identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/__MACOSX/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/._postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.1.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.2.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/data/resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/migration-resources/migration-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/org.wso2.carbon.is.migrate.client-5.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.3.0-migration/wso2is-5.3.0-migration/snakeyaml-1.16.0.wso2v1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.1.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.2.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/data/resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/migration-resources/migration-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/org.wso2.carbon.is.migration-5.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.5.0-migration/snakeyaml-1.16.0.wso2v1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.0.0-SP1/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.1.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.2.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/data/resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step1/um/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.4.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/data/claim-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/migration-resources/migration-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/org.wso2.carbon.is.migration-5.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.6.0-migration/snakeyaml-1.16.0.wso2v1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.1.0/dbscripts/step1/identity/mysql5.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.3.0/dbscripts/step1/identity/mysql5.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.4.0/dbscripts/step1/identity/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/consent/h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/db2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/db2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mssql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql5.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/mysql5.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/oracle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/oracle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step1/identity/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/db2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/db2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mssql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mssql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql5.7.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/mysql5.7.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/oracle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/oracle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.5.0/dbscripts/step2/identity/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/mysql5.7.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/oracle_rac.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step1/uma/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.6.0/dbscripts/step2/identity/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/identity/mssql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/identity/mssql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/identity/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/identity/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/uma/postgresql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/5.7.0/dbscripts/step1/uma/postgresql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/migration-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/migration-resources/migration-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/org.wso2.carbon.is.migration-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../data/Identity_component_upgrade/wso2is-5.7.0-migration/org.wso2.carbon.is.migration-5.7.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/dbconnectors/postgresql/master-datasources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../data/dbconnectors/postgresql/master-datasources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000001.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim200_to_apim210_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim200_to_apim220_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim200_to_apim250_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim200_to_apim260_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim210_to_apim220_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim210_to_apim250_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim210_to_apim260_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim220_to_apim250_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apim220_to_apim260_gateway_artifact_migrator.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.2.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.5.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.0.0to2.6.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.2.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.1.0to2.6.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.5.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/apimgt-db-migration-scripts-2.2.0to2.5.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.2.0to2.6.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/db2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/mssql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/oracle.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/apimgt-db-migration-scripts-2.5.0to2.6.0/postgresql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/migration_scripts/mysql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/mysql-connector-java-5.1.47-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/rush_re-indexing_2.5.0/reg-index.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/rush_re-indexing_2.5.0/tenantloader-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/DataPopulationInOldVersion.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/DataPopulationInOldVersion.jmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000010.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000011.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000012.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000013.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000014.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000015.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000016.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000017.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000018.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/DataPopulationInOldVersion-000019.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000001.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000002.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000003.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000004.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000005.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000006.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Integration_testing_in_new_APIM-000007.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Validation_in_new_APIM-000001.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Validation_in_new_APIM-000002.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Validation_in_new_APIM-000003.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Validation_in_new_APIM-000004.jmx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/backups/Validation_in_new_APIM-000005.jmx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/bin/DataPopulationInOldVersion.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/DataPopulationInOldVersion.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/bin/Integration_testing_in_new_APIM.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/Integration_testing_in_new_APIM.jmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testing/bin/RolesAndUsersCreation.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/RolesAndUsersCreation.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/bin/Validation_in_new_APIM.jmx" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/Validation_in_new_APIM.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testing/bin/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/jmeter.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testingtool.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../testingtool.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,25 +630,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testingtool.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="193" column="94" selection-start-line="193" selection-start-column="94" selection-end-line="193" selection-end-column="94" />
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
+            <state relative-caret-position="135">
+              <caret line="9" column="82" selection-start-line="8" selection-start-column="11" selection-end-line="9" selection-end-column="82" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/properties.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-265">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/stop_running_APIM.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,70 +687,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/properties.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testingtool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="22" column="4" selection-start-line="18" selection-start-column="3" selection-end-line="22" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xml_edit.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="40" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/python3.6/xml/etree/ElementTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17820">
-              <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+            <state relative-caret-position="411">
+              <caret line="213" column="64" lean-forward="true" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
               <folding>
-                <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_oracle.py">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check.py">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
-                <element signature="e#539#596#0" expanded="true" />
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1815">
+              <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -207,6 +766,10 @@
       <find>copydir</find>
       <find>pylibs</find>
       <find>data</find>
+      <find>rush</find>
+      <find>gate</find>
+      <find>tenantloader</find>
+      <find>IS_MIGRATE_VERSION</find>
     </findStrings>
     <replaceStrings>
       <replace>ApiManagerConfigUtil</replace>
@@ -218,8 +781,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/reg_index_sql.py" />
-        <option value="$PROJECT_DIR$/pylibs/copy_tenantloader_jar.py" />
         <option value="$PROJECT_DIR$/reindex_artifacts_registry_xml.py" />
         <option value="$PROJECT_DIR$/pylibs/run_APIM.py" />
         <option value="$PROJECT_DIR$/pylibs/reindex_artifacts_registry_xml.py" />
@@ -254,29 +815,31 @@
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/remove_tenantloader_jar.py" />
         <option value="$PROJECT_DIR$/test_oracle.py" />
         <option value="$PROJECT_DIR$/DbUtil/copy_db_connector.py" />
-        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" />
         <option value="$PROJECT_DIR$/check.py" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py" />
         <option value="$PROJECT_DIR$/DbUtil/run_mysql_queries.py" />
         <option value="$PROJECT_DIR$/tier_down.py" />
-        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/tier_down.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/datasource.py" />
         <option value="$PROJECT_DIR$/xml_edit.py" />
-        <option value="$PROJECT_DIR$/properties.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py" />
         <option value="$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py" />
+        <option value="$PROJECT_DIR$/yaml_file_edit.py" />
+        <option value="$PROJECT_DIR$/DbUtil/run_sql_queries.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py" />
+        <option value="$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py" />
+        <option value="$PROJECT_DIR$/properties.py" />
         <option value="$PROJECT_DIR$/testingtool.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1065" />
-    <option name="y" value="25" />
-    <option name="width" value="1325" />
-    <option name="height" value="743" />
+    <option name="x" value="206" />
+    <option name="y" value="119" />
+    <option name="width" value="995" />
+    <option name="height" value="557" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -286,7 +849,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,6 +870,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,8 +880,11 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -364,29 +930,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datasource.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="JAVA_HOME" value="/usr/lib/jvm/java-8-openjdk-amd64" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,20 +1004,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="yaml_file_edit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yaml_file_edit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.sample" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.testingtool" />
       <item itemvalue="Python.xml_edit" />
       <item itemvalue="Python.datasource" />
+      <item itemvalue="Python.yaml_file_edit" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.testingtool" />
+        <item itemvalue="Python.yaml_file_edit" />
         <item itemvalue="Python.xml_edit" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.datasource" />
-        <item itemvalue="Python.sample" />
       </list>
     </recent_temporary>
   </component>
@@ -572,12 +1137,44 @@
       <workItem from="1556861306235" duration="334000" />
       <workItem from="1556911700049" duration="14690000" />
       <workItem from="1557123262054" duration="18829000" />
-      <workItem from="1557212056699" duration="3551000" />
+      <workItem from="1557212056699" duration="4190000" />
+      <workItem from="1557294547707" duration="7246000" />
+      <workItem from="1557392718453" duration="6185000" />
+      <workItem from="1557459718413" duration="7163000" />
+      <workItem from="1557467472081" duration="12346000" />
+      <workItem from="1558279715376" duration="10892000" />
+      <workItem from="1558464565473" duration="4444000" />
+      <workItem from="1558497297778" duration="4460000" />
+      <workItem from="1559167425640" duration="82000" />
+      <workItem from="1559167588181" duration="5536000" />
+      <workItem from="1559437017809" duration="11681000" />
+      <workItem from="1559493718687" duration="9637000" />
+      <workItem from="1559539756922" duration="5152000" />
+      <workItem from="1559546298735" duration="6607000" />
+      <workItem from="1559618499763" duration="1582000" />
+      <workItem from="1559686215356" duration="8562000" />
+      <workItem from="1560062946078" duration="596000" />
+      <workItem from="1560226473019" duration="7380000" />
+      <workItem from="1560397126053" duration="3002000" />
+      <workItem from="1561028250412" duration="598000" />
+      <workItem from="1561470663240" duration="1232000" />
+      <workItem from="1561594980406" duration="3615000" />
+      <workItem from="1562394084622" duration="3674000" />
+      <workItem from="1562431887637" duration="2539000" />
+      <workItem from="1562501585397" duration="1487000" />
+      <workItem from="1562516225621" duration="3896000" />
+      <workItem from="1562747258206" duration="7176000" />
+      <workItem from="1563001682115" duration="4158000" />
+      <workItem from="1563261218569" duration="599000" />
+      <workItem from="1563272165364" duration="1276000" />
+      <workItem from="1563300501368" duration="827000" />
+      <workItem from="1563408024518" duration="670000" />
+      <workItem from="1564464528844" duration="7453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441438000" />
+    <option name="totallyTimeSpent" value="593830000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -589,15 +1186,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1065" y="25" width="1325" height="743" extended-state="6" />
+    <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19563523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30319563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.2462203" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" weight="0.329582" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.24598071" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49972633" weight="0.84726685" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49917898" weight="0.3971061" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -606,7 +1203,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500821" side_tool="true" weight="0.39871383" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3822894" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.38102895" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32948583" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3279743" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -626,11 +1223,6 @@
           <url>file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py</url>
           <line>8</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/run.py</url>
@@ -660,7 +1252,8 @@
     <SUITE FILE_PATH="coverage/Python$datasource.coverage" NAME="datasource Coverage Results" MODIFIED="1557174069480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$xml_edit.coverage" NAME="xml_edit Coverage Results" MODIFIED="1557174739603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$check.coverage" NAME="check Coverage Results" MODIFIED="1555469372206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$testingtool.coverage" NAME="testingtool Coverage Results" MODIFIED="1557181801041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$yaml_file_edit.coverage" NAME="yaml_file_edit Coverage Results" MODIFIED="1558501152563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$testingtool.coverage" NAME="testingtool Coverage Results" MODIFIED="1564464934546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -689,15 +1282,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/lib/python3.6/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41580">
-          <caret line="2323" column="8" selection-start-line="2323" selection-start-column="8" selection-end-line="2323" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_master_datasource.py" />
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_registry_xml.py" />
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_user_mgt_xml.py" />
     <entry file="file://$PROJECT_DIR$/DbUtil/__ini__" />
     <entry file="file://$PROJECT_DIR$/edit.py" />
@@ -756,120 +1340,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DbUtil/copy_db_connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/jmeter.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1099">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/stop_running_APIM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/tier_down.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="82" selection-start-line="8" selection-start-column="11" selection-end-line="9" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/datasource.py" />
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -881,23 +1355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="40" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17820">
-          <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,10 +1375,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="22" column="4" selection-start-line="18" selection-start-column="3" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="1635">
+          <caret line="110" column="68" selection-start-line="110" selection-start-column="68" selection-end-line="110" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yaml_file_edit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.6/xml/etree/ElementTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/bin/pip">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DbUtil/copy_db_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/change_config_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_synapse_and_tenants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/remove_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_APIM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_gateway_artifacts_config_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/run_jmeter_scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="82" selection-start-line="8" selection-start-column="11" selection-end-line="9" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,20 +1502,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/configuring_identity_components.py">
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/pip-selfcheck.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/tier_down.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-265">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/stop_running_APIM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testingtool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="193" column="94" selection-start-line="193" selection-start-column="94" selection-end-line="193" selection-end-column="94" />
+        <state relative-caret-position="411">
+          <caret line="213" column="64" lean-forward="true" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>

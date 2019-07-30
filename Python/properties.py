@@ -1,7 +1,6 @@
 # Enter path to your old_version_of_APIM.zip
 OLD_VERSION = "2.1.0"
 TO_OLD_PATH = "/home/yasas/Videos/testing2/wso2am-2.1.0.zip"
-
 # Enter path to your new_version_of_APIM.zip
 NEW_VERSION = "2.5.0"
 TO_NEW_PATH = "/home/yasas/Videos/testing2/wso2am-2.5.0.zip"
@@ -46,8 +45,7 @@ USER_DB = "userdb"
 SID = "ora12c"
 
 # Relevant WSO2 IS version(ex:5.6.0)
-IS_CURRENT_VERSION = "5.3.0"
-IS_MIGRATE_VERSION = "5.6.0"
+IS_VERSION = "5.7.0"
 
 # Give the path to JAVA_HOME
 JAVA_HOME="/usr/lib/jvm/java-8-oracle"

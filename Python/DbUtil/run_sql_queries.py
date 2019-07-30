@@ -106,6 +106,7 @@ def upgradeDBs():
         run_sql_file(
             '../data/migration_scripts/apimgt-db-migration-scripts-%sto%s/postgresql.sql' % (OLD_VERSION, NEW_VERSION),
             AM_DB)
+        # run_sql_file("/home/yasas/Downloads/apimgt-db-migration-scripts-2.1to2.5/postgresql.sql", AM_DB)
 
     else:
         print("Database provided is not valid when table creation!!!")
@@ -115,19 +116,19 @@ def confRegDB():
     """Upgrade registry database with new configurations of tables"""
 
     if DB_TYPE == 'mysql':
-        run_sql_file('../data/rush_re-indexing_2.5.0/reg-index.sql',
+        run_sql_file('../data/re_indexing_registry/reg-index.sql',
                      REG_DB)
 
     elif DB_TYPE == 'oracle':
-        run_sql_file('../data/rush_re-indexing_2.5.0/reg-index.sql',
+        run_sql_file('../data/re_indexing_registry/reg-index.sql',
                      SID)
 
     elif DB_TYPE == 'mssql':
-        run_sql_file('../data/rush_re-indexing_2.5.0/reg-index.sql',
+        run_sql_file('../data/re_indexing_registry/reg-index.sql',
                      REG_DB)
 
     elif DB_TYPE == 'postgresql':
-        run_sql_file('../data/rush_re-indexing_2.5.0/reg-index.sql',
+        run_sql_file('../data/re_indexing_registry/reg-index.sql',
                      REG_DB)
 
     else:
