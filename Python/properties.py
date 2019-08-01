@@ -1,12 +1,12 @@
 # Enter path to your old_version_of_APIM.zip
 OLD_VERSION = "2.1.0"
-TO_OLD_PATH = "/home/yasas/Videos/testing2/wso2am-2.1.0.zip"
+TO_OLD_PATH = "/products/wso2am-2.1.0.zip"
 # Enter path to your new_version_of_APIM.zip
 NEW_VERSION = "2.5.0"
-TO_NEW_PATH = "/home/yasas/Videos/testing2/wso2am-2.5.0.zip"
+TO_NEW_PATH = "/products/wso2am-2.5.0.zip"
 
 # All the APIM versions will be unzipped to this path
-APIM_HOME_PATH = "/home/yasas/Videos/testing2"
+APIM_HOME_PATH = "/products"
 
 # Database version want to keep(ex:mysql,oracle,mssql,postgresql)
 DB_TYPE = "mysql"

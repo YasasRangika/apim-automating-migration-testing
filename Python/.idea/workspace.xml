@@ -4,6 +4,7 @@
     <list default="true" id="cfd99d84-38c2-4f65-85e9-0910e683b091" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../check.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../check.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
+            <state relative-caret-position="1245">
               <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -76,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -85,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testingtool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
+            <state relative-caret-position="3000">
               <caret line="213" column="64" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
@@ -115,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
+            <state relative-caret-position="2940">
               <caret line="208" column="10" selection-start-line="208" selection-start-column="10" selection-end-line="208" selection-end-column="10" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
@@ -139,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
+            <state relative-caret-position="1635">
               <caret line="110" column="68" selection-start-line="110" selection-start-column="68" selection-end-line="110" selection-end-column="68" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
@@ -151,7 +152,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/waiting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="45">
               <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -163,7 +164,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="45">
               <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -274,6 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,7 +297,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -594,12 +595,14 @@
       <workItem from="1563272165364" duration="1276000" />
       <workItem from="1563300501368" duration="827000" />
       <workItem from="1563408024518" duration="670000" />
-      <workItem from="1564464528844" duration="10316000" />
+      <workItem from="1564464528844" duration="12095000" />
+      <workItem from="1564638918302" duration="631000" />
+      <workItem from="1564641171122" duration="1093000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="596693000" />
+    <option name="totallyTimeSpent" value="600196000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -614,7 +617,7 @@
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30319563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31254873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -883,9 +886,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testingtool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="3000">
           <caret line="213" column="64" selection-start-line="213" selection-start-column="64" selection-end-line="213" selection-end-column="64" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
@@ -909,20 +922,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
+        <state relative-caret-position="2940">
           <caret line="208" column="10" selection-start-line="208" selection-start-column="10" selection-end-line="208" selection-end-column="10" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DbUtil/run_sql_queries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -939,7 +942,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/xml_file_change.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
+        <state relative-caret-position="1635">
           <caret line="110" column="68" selection-start-line="110" selection-start-column="68" selection-end-line="110" selection-end-column="68" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
@@ -949,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/waiting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="45">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -959,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ApiMangerConfigUtil/unzippingAPIMs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="45">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -969,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
