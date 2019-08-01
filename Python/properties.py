@@ -16,8 +16,8 @@ DB_TYPE = "mysql"
 
 # --Database credentials
 # mysql
-USER_NAME = "root"
-PWD = "root"
+USER_NAME = "yasas"
+PWD = "yasas"
 HOST = "localhost"
 PORT = 3306
 # # oracle
