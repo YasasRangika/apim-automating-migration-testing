@@ -1,9 +1,9 @@
-# Welcome to APIM-Automating-Migration-Testing Tool
+﻿# Welcome to APIM-Automating-Migration-Testing Tool
 ![enter image description here](https://lh3.googleusercontent.com/jzdVP5eLXSpqJtMzeQxglw-34LLe6p3tUwrDBWd33sRqJu5TGJRtzz8t6bfOkthJQjYcGW2ZLi0p=s300)
 
 
 ## **Prerequisites**
--   Clone or download [this](https://github.com/YasasRangika/apim-automating-migration-testing) GitHub repository for the testing tool.
+-   Clone or download [this](https://github.com/YasasRangika/apim-automating-migration-testing) GitHub repository.
     
 
 
@@ -87,135 +87,95 @@ This is a python file. So before feeding data to this file, you need to know how
 
 ## **Manually Adding Required Resources for The Testing Tool**
 
-    Do not remove any file comes with the testing tool except adding new required files.
-There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in `<Testing_tool_HOME_PATH>/data` directory. These directories include edited registry.xml file that required to replace with original file came up among API Manager package for mounting registries.  
-If the new version you are going to test is not in this list you need to manually add it to this kind of directory. For that follow [https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases](https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases)(see the AM version you want) steps in the section “To enable access to the registry database” to build registry.xml. When naming the directory please follow this pattern;  
-API-M_<APIM_VERSION>
+	    Do not remove any file comes with the testing tool except adding new required files.
 
-## Rename a file
+ - There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in <Testing_tool_HOME_PATH>/data directory. These directories include edited registry.xml file that required to replace with original file came up among API Manager package for mounting registries.  
+If the new version you are going to test is not in this list you need to manually add it to this kind of directory. For that follow [https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases](https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases)(see the AM version you want) steps in the section “To enable access to the registry database” to build registry.xml. When naming the directory please follow this pattern;
+   
+   > API-M_<APIM_VERSION>
+  
+ -   In most cases, user-mgt.xml is same as in all the versions. So the configured user-mgt.xml file is located under <Testing_tool_HOME_PATH>/data  directory for all cases. If any special situation comes in future to change user-mgt.xml with the version, then add it with the registry.xml and change the code segment; 
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+    #user-mgt.xml file changing
+    change_file("user-mgt.xml", '../data/user-mgt.xml', ←change the path to file'%s/wso2am-%s/repository/conf/user-mgt.xml' % (APIM_HOME_PATH, OLD_VERSION))
 
-## Delete a file
+In <Testing_tool_HOME_PATH>/Python/testingtool.py  file
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+-   As mentioned in WSO2 API Manager migration documentation download the reg-index.sql and tenantloader.jar files and place it in the `<Testing_tool_HOME_PATH>/data/re_indexing_registry` directory with renaming these two files as below;
 
-## Export a file
+> *sql file:* ‘**reg-index.sql**’ and jar file: ‘**tenantloader.jar**’
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+![enter image description here](https://lh3.googleusercontent.com/LpaiTWE6k7MCv2CRjrnocwm5VBYQfBLPmNDJMEYTpYeNy5HGQmZPzncrYX1Oc04Bno3p7FqpRmU_)
 
+ - In `<Testing_tool_HOME_PATH>/data/Access_control_migration_client`  directory you should keep the required migration client mentioned in the WSO2 APIM migration documentation.
 
-# Synchronization
+![enter image description here](https://lh3.googleusercontent.com/g9QI09mFdSrZuRkK1zsKNrE19bnyolSnFRtF0mhujjTxwlmWbe6FktvWXy8vUvE0vlwnXDLgBDW_)
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
+Go through the given link in the documentation and download .jar file or .zip file and add it this directory.  
+It is essential to change required changes in code level also as follows;
 
-There are two types of synchronization and they can complement each other:
+Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_identity_components.py`  and find below code segment,
 
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
+    def access_control_migration_client():
+	    """Copy access control migration client and configure server"""
+	    dir = '%s/wso2am-%s/migration-resources' % (APIM_HOME_PATH, NEW_VERSION)
+	    if os.path.isdir(dir):
+		    shutil.rmtree(dir)
+	    
+	    jar_dir = '%s/wso2am-%s/repository/components/dropins/org.wso2.carbon.is.migration-%s.jar' % (APIM_HOME_PATH, NEW_VERSION, IS_MIGRATE_VERSION)
+	    os.remove(jar_dir)
+	    if shutil.copy('../data/Access_control_migration_client/org.wso2.carbon.apimgt.access.control.migration.client-1.0-SNAPSHOT.jar'<←org.wso2.carbon.is.migration-5.6.0.jar to the name of new downloaded file name>, '%s/wso2am-%s/repository/components/dropins' % (APIM_HOME_PATH, NEW_VERSION)):
+		    print("Successfully copied the apimgt.access.control.migration.client JAR.")
+		    
+	    subprocess.Popen(["gnome-terminal", "-e",
+	    "%s/wso2am-%s/bin/wso2server.sh -DmigrateAccessControl=true" % (APIM_HOME_PATH, NEW_VERSION)])
 
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
+ -    Identity component upgrading;
+ Download and copy the required IS-migration resource as mentioned in documentation to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade` directory. For that follow the instructions given in migration documentation.
+![enter image description here](https://lh3.googleusercontent.com/KOew2RC1jPkYLrjxJaCTte6S13LCdKqBnP9Lki91CwpOcSi5C6WTmEu3If1X7vmKfYQfzaehlAeU)
+	
+		- Unzip the zip file and make sure the name of that directory is in format,
+   ***
 
-## Open a file
+> ‘wso2is-x.x.0-migration’
 
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
+***
+   
+   Change the IS_MIGRATE_VERSION value in properties.py file.
 
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+    
+    #Relevant WSO2 IS version(ex:5.6.0)
+    IS_CURRENT_VERSION = "5.3.0"
+    IS_MIGRATE_VERSION = "5.7.0"
 
 
-# Markdown extensions
+ - Check whether inside that ‘**migration-resources**’ folder exists this
+   directory
 
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+    
+-   If you can’t see ‘**org.wso2.carbon.is.migration-x.x.0.jar**’ in <wso2is-x.x.0-migration-HOME> directory please check other folders named like droppings etc. If then bring them into <wso2is-x.x.0-migration-HOME> path
+    
+-   After all these steps you should see the <wso2is-x.x.0-migration-HOME> exists below files;
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+> migration-resources 
+> org.wso2.carbon.is.migration-x.x.0.jar
+> snakeyaml-1.16.0.wso2v1.jar
 
+ - Download apimgt-db-migration-scripts by the link provided in
+   migration documentation
 
-## SmartyPants
+![enter image description here](https://lh3.googleusercontent.com/wJi4o4ZpP_HC8b45qTdGwdm7I4GlyJ6Vi7u_CXXQePRn0pELRyomM1iEfj5YHIHk__1M50ar8fHO)
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+Unzip content from the zip file to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade/migration_scripts` directory with naming followed by below format.
+***
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+> ‘apimgt-db-migration-scripts-x.x.0toy.y.0’
 
+***
 
-## KaTeX
+![enter image description here](https://lh3.googleusercontent.com/JS-0m6lPyCf31wFBBUzhtin0LAkeYZEbsMpncS6ErJ_lTTdbsgcsSeLK9BOll5xhKoM9Qjeteqg1)
+It is requested to download and copy gateway_artifact_migrator.sh script to the same above-mentioned directory by renaming as follows;
 
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+> ***‘apim_gateway_artifact_migrator.sh’*** 
+> *(remove all the version numbers)*
 
