@@ -21,11 +21,15 @@ echo "		   ██║   ███████╗███████║   ██
 echo "		   ╚═╝   ╚══════╝╚══════╝   ╚═╝   ╚═╝╚═╝  ╚═══╝ ╚═════╝        ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝"
                                                                                                
 if command -v python3 &>/dev/null; then
-    sudo apt-get install python-pip
-    pip install JayDeBeApi
-    cd Python
-    python3 testingtool.py
+	sudo apt install virtualenv
+	sudo apt-get install python3-pip
+	virtualenv -p `which python3` pyenv
+	source pyenv/bin/activate
+    	pip install -r requirements.txt
+
+    	cd Python
+    	python3 testingtool.py
 else
-    echo ERROR: This testing tool is support for Python3 or above so please do manually install Python 3 to continue to the testing tool.
+    	echo ERROR: This testing tool is support for Python3 or above so please do manually install Python 3 to continue to the testing tool.
 fi
 
