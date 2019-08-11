@@ -1,4 +1,4 @@
-﻿# Welcome to APIM-Automating-Migration-Testing Tool
+# Welcome to APIM-Automating-Migration-Testing Tool
 ![enter image description here](https://lh3.googleusercontent.com/jzdVP5eLXSpqJtMzeQxglw-34LLe6p3tUwrDBWd33sRqJu5TGJRtzz8t6bfOkthJQjYcGW2ZLi0p=s300)
 
 
@@ -158,11 +158,14 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
 -   After all these steps you should see the <wso2is-x.x.0-migration-HOME> exists below files;
 
 > migration-resources 
+> 
 > org.wso2.carbon.is.migration-x.x.0.jar
+> 
 > snakeyaml-1.16.0.wso2v1.jar
 
  - Download apimgt-db-migration-scripts by the link provided in
    migration documentation
+
 
 ![enter image description here](https://lh3.googleusercontent.com/wJi4o4ZpP_HC8b45qTdGwdm7I4GlyJ6Vi7u_CXXQePRn0pELRyomM1iEfj5YHIHk__1M50ar8fHO)
 
@@ -174,6 +177,8 @@ Unzip content from the zip file to `<Testing_tool_HOME_PATH>/data/Identity_compo
 ***
 
 ![enter image description here](https://lh3.googleusercontent.com/JS-0m6lPyCf31wFBBUzhtin0LAkeYZEbsMpncS6ErJ_lTTdbsgcsSeLK9BOll5xhKoM9Qjeteqg1)
+
+
 It is requested to download and copy gateway_artifact_migrator.sh script to the same above-mentioned directory by renaming as follows;
 
 > ***‘apim_gateway_artifact_migrator.sh’*** 
