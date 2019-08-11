@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cfd99d84-38c2-4f65-85e9-0910e683b091" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testing/bin/jmeter.log" beforeDir="false" afterPath="$PROJECT_DIR$/../testing/bin/jmeter.log" afterDir="false" />
-    </list>
+    <list default="true" id="cfd99d84-38c2-4f65-85e9-0910e683b091" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/testingtool.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -599,12 +596,12 @@
       <workItem from="1564641171122" duration="8299000" />
       <workItem from="1565174287041" duration="732000" />
       <workItem from="1565503668455" duration="2112000" />
-      <workItem from="1565535377613" duration="1393000" />
+      <workItem from="1565535377613" duration="2223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="611639000" />
+    <option name="totallyTimeSpent" value="612469000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -962,7 +959,7 @@
     <entry file="file://$PROJECT_DIR$/testingtool.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
