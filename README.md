@@ -99,7 +99,7 @@ If the new version you are going to test is not in this list you need to manuall
     #user-mgt.xml file changing
     change_file("user-mgt.xml", '../data/user-mgt.xml', ←change the path to file'%s/wso2am-%s/repository/conf/user-mgt.xml' % (APIM_HOME_PATH, OLD_VERSION))
 
-In <Testing_tool_HOME_PATH>/Python/testingtool.py  file
+In `<Testing_tool_HOME_PATH>/Python/testingtool.py`  file
 
 -   As mentioned in WSO2 API Manager migration documentation download the reg-index.sql and tenantloader.jar files and place it in the `<Testing_tool_HOME_PATH>/data/re_indexing_registry` directory with renaming these two files as below;
 
@@ -131,6 +131,7 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
 	    "%s/wso2am-%s/bin/wso2server.sh -DmigrateAccessControl=true" % (APIM_HOME_PATH, NEW_VERSION)])
 
  -    Identity component upgrading;
+ 
  Download and copy the required IS-migration resource as mentioned in documentation to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade` directory. For that follow the instructions given in migration documentation.
 
 
@@ -145,14 +146,12 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
    
    
 
- - Change the IS_MIGRATE_VERSION value in properties.py file.
+ Change the IS_MIGRATE_VERSION value in properties.py file.
 
-    
     #Relevant WSO2 IS version(ex:5.6.0)
     IS_CURRENT_VERSION = "5.3.0"
     IS_MIGRATE_VERSION = "5.7.0"
-
-
+    
  - Check whether inside that ‘**migration-resources**’ folder exists this
    directory
 
@@ -186,5 +185,6 @@ Unzip content from the zip file to `<Testing_tool_HOME_PATH>/data/Identity_compo
 It is requested to download and copy gateway_artifact_migrator.sh script to the same above-mentioned directory by renaming as follows;
 
 > ***‘apim_gateway_artifact_migrator.sh’*** 
+> 
 > *(remove all the version numbers)*
 
