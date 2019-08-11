@@ -132,6 +132,8 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
 
  -    Identity component upgrading;
  Download and copy the required IS-migration resource as mentioned in documentation to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade` directory. For that follow the instructions given in migration documentation.
+
+
 ![enter image description here](https://lh3.googleusercontent.com/KOew2RC1jPkYLrjxJaCTte6S13LCdKqBnP9Lki91CwpOcSi5C6WTmEu3If1X7vmKfYQfzaehlAeU)
 	
 		- Unzip the zip file and make sure the name of that directory is in format,
