@@ -136,14 +136,16 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
 
 ![enter image description here](https://lh3.googleusercontent.com/KOew2RC1jPkYLrjxJaCTte6S13LCdKqBnP9Lki91CwpOcSi5C6WTmEu3If1X7vmKfYQfzaehlAeU)
 	
-		- Unzip the zip file and make sure the name of that directory is in format,
+- Unzip the zip file and make sure the name of that directory is in format,
    ***
 
 > ‘wso2is-x.x.0-migration’
 
 ***
    
-   Change the IS_MIGRATE_VERSION value in properties.py file.
+   
+
+ - Change the IS_MIGRATE_VERSION value in properties.py file.
 
     
     #Relevant WSO2 IS version(ex:5.6.0)
