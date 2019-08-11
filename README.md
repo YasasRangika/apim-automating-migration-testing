@@ -44,11 +44,8 @@
 
 ## **Testing Tool**
 
-```mermaid
-graph LR
-A[Properties conf] --> B[Automated Migration and Testing Process]
-B --> C[Terminal log and JMeter log files]
-```
+![enter image description here](https://lh3.googleusercontent.com/NI4AYDlIpXpNAZ0g5IPl2ltiCe4ImZZmI9udKlLJkW09ZqObqLQ5lB3ykXMSdS8vOnbIgJ-w2itJ)
+
 This migration Test Automation tool is a python program (Python 3) that includes several components. To run this complete program there is shell script for Linux-based platforms and bat file for Windows-based platforms.
 
 There is a property file named as properties.py inside the Python directory in the root directory of testing tool. All the system required information is extracted from this file. As this is the most important part of this tool, the whole next section will discuss how to feed data into it.
