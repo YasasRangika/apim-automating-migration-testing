@@ -226,8 +226,10 @@ This APIM Testing tool is consist of JMeter testing tool. Find it from `<Testing
 		 - **RolesAndUsersCreation.jmx:**
 			 This script is to take care of admin SOAP APIs to create roles and users. Without any special reason, users will not want to open or change this script version to version.
 		 - **DataPopulationInOldVersion.jmx:**
+
 ![enter image description here](https://lh3.googleusercontent.com/LDVNLOepP9T72Muw7TKas1Nkg0m8i8aE8PyZOTFfKkBw7Cb4kCVXn-jh4OCLAbDOBXOmULdtZnch)
-		This test script designed assuming the old version is API Manager 2.1.0
+		
+This test script designed assuming the old version is API Manager 2.1.0
 
 You need to change the last variable ‘vNum’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
 		 -    **Validation_in_new_APIM.jmx:**
