@@ -220,7 +220,8 @@ Change the `<stringProp name="Argument.value">v0.12</stringProp>` version number
 
 Do this for all above mentioned three files.
 
-## **Type 02 - With JMeter UI**
+**Type 02 - With JMeter UI**
+
 This APIM Testing tool is consist of JMeter testing tool. Find it from `<Testing_tool_HOME_PATH>/testing/bin` directory. To do any changes in JMeter script start JMeter by manually going to this location.
 
  -Existing test scripts are as follows;
