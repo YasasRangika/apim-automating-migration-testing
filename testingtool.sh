@@ -26,6 +26,7 @@ if command -v python3 &>/dev/null; then
 	virtualenv -p `which python3` pyenv
 	source pyenv/bin/activate
     	pip install -r requirements.txt
+	pip install JPype1==0.6.3 --force-reinstall
 
     	cd Python
     	python3 testingtool.py
