@@ -234,7 +234,10 @@ This test script designed assuming the old version is API Manager 2.1.0
 You need to change the last variable ‘vNum’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
 		 -    **Validation_in_new_APIM.jmx:**
 		 This script is for validating APIs created in the previous version of API Manager.
-	![enter image description here](https://lh3.googleusercontent.com/aJ7rqnyH3eIfSWQvtbvbyWcfkEgwGJZ67bOvFP0rgvVeMJpsSo1c_m41OqtcmyLfPxbkeSkDOwCP)
+
+
+![enter image description here](https://lh3.googleusercontent.com/aJ7rqnyH3eIfSWQvtbvbyWcfkEgwGJZ67bOvFP0rgvVeMJpsSo1c_m41OqtcmyLfPxbkeSkDOwCP)
+
 
 So as mentioned in the above step, need to change the version number
 	 - **Integration_testing_in_new_APIM.jmx:**
