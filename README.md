@@ -192,6 +192,7 @@ It is requested to download and copy gateway_artifact_migrator.sh script to the 
 There are two ways to accomplish this step either using JMeter UI or editing JMeter script;
 
 **Type 01 - Edit JMeter Script**
+
 Go to the directory `<Testing_tool_HOME_PATH>/testing/scripts` and open below mentioned three scripts using text editor;
 
 > DataPopulationInOldVersion.jmx
