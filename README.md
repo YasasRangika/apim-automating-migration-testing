@@ -222,17 +222,20 @@ Do this for all above mentioned three files.
 ## **Type 02 - With JMeter UI**
 This APIM Testing tool is consist of JMeter testing tool. Find it from `<Testing_tool_HOME_PATH>/testing/bin` directory. To do any changes in JMeter script start JMeter by manually going to this location.
 
- - Existing test scripts are as follows;
-		 - **RolesAndUsersCreation.jmx:**
+ -Existing test scripts are as follows;
+ 
+ - **RolesAndUsersCreation.jmx:**
 			 This script is to take care of admin SOAP APIs to create roles and users. Without any special reason, users will not want to open or change this script version to version.
-		 - **DataPopulationInOldVersion.jmx:**
+			 
+ - **DataPopulationInOldVersion.jmx:**
 
 ![enter image description here](https://lh3.googleusercontent.com/LDVNLOepP9T72Muw7TKas1Nkg0m8i8aE8PyZOTFfKkBw7Cb4kCVXn-jh4OCLAbDOBXOmULdtZnch)
 		
 This test script designed assuming the old version is API Manager 2.1.0
 
 You need to change the last variable ‘vNum’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
-		 -    **Validation_in_new_APIM.jmx:**
+
+ -    **Validation_in_new_APIM.jmx:**
 		 This script is for validating APIs created in the previous version of API Manager.
 
 
@@ -240,7 +243,8 @@ You need to change the last variable ‘vNum’ to the relevant rest api version
 
 
 So as mentioned in the above step, need to change the version number
-	 - **Integration_testing_in_new_APIM.jmx:**
+
+- **Integration_testing_in_new_APIM.jmx:**
 	This script will generate and test new APIs in the new version of API Manager. Do the version number change as previous.
 
 ## **Running Testing Tool**
