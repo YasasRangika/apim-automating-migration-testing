@@ -232,7 +232,7 @@ This APIM Testing tool consists of JMeter testing tool. Find it from `<Testing_t
 
 ![](https://lh5.googleusercontent.com/aDs3iLrny78Iqv1sfWsR0wG6S5P0DrN7usuTk9Y2JK3hZZbHQnj4ml55_xBMrIxZVVKg3eD8wTMpsv7WXHAkEsC9sKSrX4If6xjUVcXwPFqRB7pYCMIfkK9Z-9k_pizmhwZk0p6h)
 		
-This test script is designed assuming the old version is API Manager 2.1.0. (You can find this variable list by clicking on the ‘Data Population in Old Version’ thread class name in sidepane).
+This test script is designed assuming the old version is API Manager 2.2.0. (You can find this variable list by clicking on the ‘Data Population in Old Version’ thread class name in sidepane).
 
 You need to change the last variable ‘rest_api_version’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
 
