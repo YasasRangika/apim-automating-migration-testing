@@ -89,7 +89,7 @@ This is a python file. So before feeding data to this file, you need to know how
 
 	    Do not remove any file that comes with the testing tool except adding new required files.
 
- - There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in <Testing_tool_HOME_PATH>/data directory. These directories include edited registry.xml file that is required to replace with original file came up among API Manager package for mounting registries.  
+ - There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in <Testing_tool_HOME_PATH>/data directory. These directories include edited registry.xml file that is required to replace with the original file that came up among API Manager package for mounting registries.  
 If the new version you are going to test is not in this list you need to manually add it to this kind of directory. For that follow [https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases](https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases)(see the AM version you want) steps in the section “To enable access to the registry database” to build registry.xml. When naming the directory please follow this pattern;
    
    > API-M_<APIM_VERSION>
