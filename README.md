@@ -1,4 +1,4 @@
-# Welcome to APIM-Automating-Migration-Testing Tool
+# Welcome to Automating-APIM-Migration-Testing Tool
 ![enter image description here](https://lh3.googleusercontent.com/jzdVP5eLXSpqJtMzeQxglw-34LLe6p3tUwrDBWd33sRqJu5TGJRtzz8t6bfOkthJQjYcGW2ZLi0p=s300)
 
 
