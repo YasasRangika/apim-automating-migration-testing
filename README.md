@@ -30,7 +30,7 @@
 
   
 
--   All the database names that you have provided when creating databases must be added to the properties file that is mentioned in the following section.
+-   All the database names that you have provided when creating databases must be added to the properties file that is mentioned in the following 'working with properties file' section.
     
 
   
@@ -65,7 +65,7 @@ This is a python file. So before feeding data to this file, you need to know how
     
  -   Commenting is done by ‘#’ sign in python.
 
-**Give New Values and Commenting/Uncommenting in Properties File**
+**Give New Values and Commenting/Uncommenting default values in Properties File**
 
 	   -   OLD_VERSION/TO_OLD_PATH: Chosen old/new version
 	  
@@ -87,21 +87,21 @@ This is a python file. So before feeding data to this file, you need to know how
 
 ## **Manually Adding Required Resources for The Testing Tool**
 
-	    Do not remove any file comes with the testing tool except adding new required files.
+	    Do not remove any file that comes with the testing tool except adding new required files.
 
- - There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in <Testing_tool_HOME_PATH>/data directory. These directories include edited registry.xml file that required to replace with original file came up among API Manager package for mounting registries.  
+ - There are three directories named API-M_2.1.0, API-M_2.2.0, API-M_2.5.0 in <Testing_tool_HOME_PATH>/data directory. These directories include edited registry.xml file that is required to replace with original file came up among API Manager package for mounting registries.  
 If the new version you are going to test is not in this list you need to manually add it to this kind of directory. For that follow [https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases](https://docs.wso2.com/display/AM210/Installing+and+Configuring+the+Databases)(see the AM version you want) steps in the section “To enable access to the registry database” to build registry.xml. When naming the directory please follow this pattern;
    
    > API-M_<APIM_VERSION>
   
- -   In most cases, user-mgt.xml is same as in all the versions. So the configured user-mgt.xml file is located under <Testing_tool_HOME_PATH>/data  directory for all cases. If any special situation comes in future to change user-mgt.xml with the version, then add it with the registry.xml and change the code segment; 
+ -   In most cases, user-mgt.xml is same as in all the versions. So the configured user-mgt.xml file is located under <Testing_tool_HOME_PATH>/data  directory for all cases. If any special situation comes in future to change user-mgt.xml with the version, then edit it with the registry.xml and change the code segment; 
 
     #user-mgt.xml file changing
     change_file("user-mgt.xml", '../data/user-mgt.xml', ←change the path to file'%s/wso2am-%s/repository/conf/user-mgt.xml' % (APIM_HOME_PATH, OLD_VERSION))
 
 In `<Testing_tool_HOME_PATH>/Python/testingtool.py`  file
 
--   As mentioned in WSO2 API Manager migration documentation download the reg-index.sql and tenantloader.jar files and place it in the `<Testing_tool_HOME_PATH>/data/re_indexing_registry` directory with renaming these two files as below;
+-   As mentioned in WSO2 API Manager migration documentation, download the reg-index.sql and tenantloader.jar files and place it in the `<Testing_tool_HOME_PATH>/data/re_indexing_registry` directory with renaming these two files as below;
 
 > *sql file:* ‘**reg-index.sql**’ and jar file: ‘**tenantloader.jar**’
 
@@ -111,8 +111,8 @@ In `<Testing_tool_HOME_PATH>/Python/testingtool.py`  file
 
 ![enter image description here](https://lh3.googleusercontent.com/g9QI09mFdSrZuRkK1zsKNrE19bnyolSnFRtF0mhujjTxwlmWbe6FktvWXy8vUvE0vlwnXDLgBDW_)
 
-Go through the given link in the documentation and download .jar file or .zip file and add it this directory.  
-It is essential to change required changes in code level also as follows;
+Go through the given link in the documentation and download .jar file or .zip file and add it to `<Testing_tool_HOME_PATH>/data/Access_control_migration_client` directory.  
+It is essential to do required changes in code level also as follows;
 
 Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_identity_components.py`  and find below code segment,
 
@@ -152,13 +152,12 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
     IS_CURRENT_VERSION = "5.3.0"
     IS_MIGRATE_VERSION = "5.7.0"
     
- - Check whether inside that ‘**migration-resources**’ folder exists this
-   directory
+ - Check whether ‘**migration-resources**’ folder exist inside the unzipped directory.
 
     
--   If you can’t see ‘**org.wso2.carbon.is.migration-x.x.0.jar**’ in <wso2is-x.x.0-migration-HOME> directory please check other folders named like droppings etc. If then bring them into <wso2is-x.x.0-migration-HOME> path
+-   If you can’t see ‘**org.wso2.carbon.is.migration-x.x.0.jar**’ in <wso2is-x.x.0-migration-HOME> directory, please check if it is available inside the folder named 'droppings' or another folder available in this location. If the jar files are available inside the droppings folder or within a similar folder then bring the jar files into the `<wso2is-x.x.0-migration-HOME>` path
     
--   After all these steps you should see the <wso2is-x.x.0-migration-HOME> exists below files;
+-   After all these steps you should see the below files exists inside `<wso2is-x.x.0-migration-HOME>`;
 
 > migration-resources 
 > 
@@ -172,7 +171,7 @@ Go to the `<Testing_tool_HOME_PATH>/Python/ApiMangerConfigUtil/configuring_ident
 
 ![enter image description here](https://lh3.googleusercontent.com/wJi4o4ZpP_HC8b45qTdGwdm7I4GlyJ6Vi7u_CXXQePRn0pELRyomM1iEfj5YHIHk__1M50ar8fHO)
 
-Unzip content from the zip file to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade/migration_scripts` directory with naming followed by below format.
+Unzip content from the zip file to `<Testing_tool_HOME_PATH>/data/Identity_component_upgrade/migration_scripts` directory renaming it in the below format.
 ***
 
 > ‘apimgt-db-migration-scripts-x.x.0toy.y.0’
@@ -212,17 +211,17 @@ Then find this segment;
 
 Change the `<stringProp name="Argument.value">v0.12</stringProp>` version number according to the APIM version you are going to test. For assistance;
 
- - APIM 2.0.0 - v0.10 
- - APIM 2.1.0 - v0.11 
- - APIM 2.2.0 - v0.12 
- - APIM 2.5.0 - v0.13 
- - APIM 2.6.0 - v0.14
+ - APIM 2.0.0 -> v0.10 
+ - APIM 2.1.0 -> v0.11 
+ - APIM 2.2.0 -> v0.12 
+ - APIM 2.5.0 -> v0.13 
+ - APIM 2.6.0 -> v0.14
 
 Do this for all above mentioned three files.
 
 **Type 02 - With JMeter UI**
 
-This APIM Testing tool is consist of JMeter testing tool. Find it from `<Testing_tool_HOME_PATH>/testing/bin` directory. To do any changes in JMeter script start JMeter by manually going to this location.
+This APIM Testing tool consists of JMeter testing tool. Find it from `<Testing_tool_HOME_PATH>/testing/bin` directory. To do any changes in JMeter script start JMeter by manually going to this location. Please go through [these steps](https://www.blazemeter.com/blog/how-get-started-jmeter-part-1-installation-test-plans/) to launch JMeter.
 
  -Existing test scripts are as follows;
  
@@ -231,17 +230,17 @@ This APIM Testing tool is consist of JMeter testing tool. Find it from `<Testing
 			 
  - **DataPopulationInOldVersion.jmx:**
 
-![enter image description here](https://lh3.googleusercontent.com/LDVNLOepP9T72Muw7TKas1Nkg0m8i8aE8PyZOTFfKkBw7Cb4kCVXn-jh4OCLAbDOBXOmULdtZnch)
+![](https://lh5.googleusercontent.com/aDs3iLrny78Iqv1sfWsR0wG6S5P0DrN7usuTk9Y2JK3hZZbHQnj4ml55_xBMrIxZVVKg3eD8wTMpsv7WXHAkEsC9sKSrX4If6xjUVcXwPFqRB7pYCMIfkK9Z-9k_pizmhwZk0p6h)
 		
-This test script designed assuming the old version is API Manager 2.1.0
+This test script is designed assuming the old version is API Manager 2.1.0. (You can find this variable list by clicking on the ‘Data Population in Old Version’ thread class name in sidepane).
 
-You need to change the last variable ‘vNum’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
+You need to change the last variable ‘rest_api_version’ to the relevant rest api version number mentioned in [https://docs.wso2.com/display/AM260/RESTful+APIs](https://docs.wso2.com/display/AM260/RESTful+APIs).
 
  -    **Validation_in_new_APIM.jmx:**
 		 This script is for validating APIs created in the previous version of API Manager.
 
 
-![enter image description here](https://lh3.googleusercontent.com/aJ7rqnyH3eIfSWQvtbvbyWcfkEgwGJZ67bOvFP0rgvVeMJpsSo1c_m41OqtcmyLfPxbkeSkDOwCP)
+![](https://lh5.googleusercontent.com/01N59ZEXqAMRmoEaw1OeTGXIbKJ_pWzdU7yDpPBGF9gfowsgraSYulqPntRXOTrgXUKwV7mBfgEfxuduJgbIIapFIMfKQiEQ4C6rCallWqj3RxclxQy557x7auAxudNQj_j_CVaw)
 
 
 So as mentioned in the above step, need to change the version number
@@ -254,4 +253,4 @@ So as mentioned in the above step, need to change the version number
 By following the above steps correctly, now you are ready to run the testing tool.
 Using shell script for Linux based OS or bat file for Windows OS you can run the testing tool.
 
-![](https://lh6.googleusercontent.com/0tbU0BWUMxlvxEfchBe6VbUUMePFt2B2bi9mYgweP4jc2K_d-RW39EVfWS2stXeyJXlt52kml3NSD1rQTj9IdXmVpAttUzaHcQWIbjz8-Tco3bRiwJ4mV9E9XOfLDKQJ7g)
+![](https://lh6.googleusercontent.com/SaXwfK8k5e1Upajq7B6tiIrir1yethP0Rx_OvYH8GiLCqVxFCmFmtC3VDBFLEGWFLmoJckh-LIlR8mee9tsShZvhOhQqU09scUKqOZXjtAicavUn-B5QTjpZa5eRBLipIwuH40iR)
