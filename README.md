@@ -81,7 +81,7 @@ This is a python file. So before feeding data to this file, you need to know how
        
 	   -   SID: This is only for Oracle database
        
-	   -   IS_CURRENT_VERSION/IS_MIGRATE_VERSION: Identity server versions those are required for given previous and new versions of API Manager products
+	   -   IS_VERSION: Identity server version which is required for given new version of API Manager product
        
 	   -   JAVA_HOME: Java home path if it is not set as a path variable
 
