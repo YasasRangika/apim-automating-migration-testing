@@ -49,4 +49,3 @@ IS_VERSION = "5.7.0"
 
 # Give the path to JAVA_HOME
 JAVA_HOME="/usr/lib/jvm/java-8-oracle"
-#*************REMOVE THIS THING LATER
